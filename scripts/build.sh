@@ -15,7 +15,7 @@ xcodegen generate --spec project.yml
 xcodebuild -project OneWIFI.xcodeproj -scheme OneWIFI \
   -configuration Release -destination 'platform=macOS' \
   -derivedDataPath "$SWITCH_BUILD_DIR/DerivedData" \
-  ARCHS=arm64 MACOSX_DEPLOYMENT_TARGET=27.0 \
+  ARCHS=arm64 MACOSX_DEPLOYMENT_TARGET=14.0 \
   MARKETING_VERSION="$VERSION" CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
   PRODUCT_BUNDLE_IDENTIFIER=com.oneims.onewifi.mac DISPLAY_NAME=OneWIFI build
 APP="$SWITCH_BUILD_DIR/DerivedData/Build/Products/Release/OneWIFI.app"
