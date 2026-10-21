@@ -7,13 +7,27 @@ import (
 	"errors"
 	"io"
 	"net"
+	"os"
 	"path/filepath"
 	"testing"
 	"time"
 )
 
+// socketDir returns a short temporary directory for unix sockets. macOS caps
+// sun_path at 104 bytes, and t.TempDir() lives under the workspace build
+// directory, which is long enough on a CI runner to exceed that cap.
+func socketDir(t *testing.T) string {
+	t.Helper()
+	dir, err := os.MkdirTemp("/tmp", "estkble-")
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Cleanup(func() { _ = os.RemoveAll(dir) })
+	return dir
+}
+
 func TestCancelAPDUWait(t *testing.T) {
-	path := filepath.Join(t.TempDir(), "ble.sock")
+	path := filepath.Join(socketDir(t), "ble.sock")
 	listener, err := net.Listen("unix", path)
 	if err != nil {
 		t.Fatal(err)
@@ -84,7 +98,7 @@ func TestRequestTimeoutBudgets(t *testing.T) {
 
 func fakeBridge(t *testing.T, respond func(bridgeRequest) bridgeResponse) Client {
 	t.Helper()
-	path := filepath.Join(t.TempDir(), "ble.sock")
+	path := filepath.Join(socketDir(t), "ble.sock")
 	listener, err := net.Listen("unix", path)
 	if err != nil {
 		t.Fatal(err)
