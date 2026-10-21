@@ -50,14 +50,9 @@ private final class AppDependencies: ObservableObject {
 struct ProletariusApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @StateObject private var dependencies = AppDependencies()
-    private let launchSilently = AppLaunchMode.shouldLaunchSilently
 
     var body: some Scene {
-        if #available(macOS 15.0, *) {
-            mainWindow.defaultLaunchBehavior(launchSilently ? .suppressed : .presented)
-        } else {
-            mainWindow
-        }
+        mainWindow
 
         Settings {
             SettingsView()
@@ -66,7 +61,8 @@ struct ProletariusApp: App {
         ProletariusMenuBarScene(appDelegate: appDelegate, dependencies: dependencies)
     }
 
-    // `defaultLaunchBehavior` is macOS 15+, so silent launch only applies there.
+    // `defaultLaunchBehavior` is macOS 15+ only, so the window is ordered out
+    // from the delegate instead; that keeps silent launch working on 14.
     private var mainWindow: some Scene {
         Window("OneWIFI", id: AppSceneID.mainWindow) {
             MainAppContent(appDelegate: appDelegate, dependencies: dependencies)
@@ -222,7 +218,15 @@ final class AppDelegate: NSObject, ObservableObject, NSApplicationDelegate,
         }
 
         // The scene honors silent launch; a normal launch activates the window.
-        if !AppLaunchMode.shouldLaunchSilently {
+        if AppLaunchMode.shouldLaunchSilently {
+            // macOS 15 suppresses the window through defaultLaunchBehavior; on
+            // 14 it has to be ordered out once SwiftUI has created it.
+            DispatchQueue.main.async {
+                for window in NSApp.windows where window.canBecomeMain {
+                    window.orderOut(nil)
+                }
+            }
+        } else {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
                 self?.showMainWindow()
             }
