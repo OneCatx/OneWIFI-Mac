@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "id": "FX-CONTACTS-OK",
+    "method": "GET",
+    "path": "/api/sms/contacts",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "query": {
+      "device_id": "dev-ec25-01",
+      "limit": "100"
+    },
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "WEB sms_api.go handleSMSContacts; Mac remote list = contacts array (not MDD)"
+  },
+  "response": {
+    "data": [
+      {
+        "device_id": "dev-ec25-01",
+        "device_name": "EC25-01",
+        "modem_imei": "867394042309830",
+        "iccid": "89860000000000000001",
+        "imsi": "460001234567890",
+        "local_phone": "+8613800138000",
+        "peer": "+447700900123",
+        "display_name": "+447700900123",
+        "last_message": "Balance is 12.00",
+        "last_content": "Balance is 12.00",
+        "last_timestamp": "2026-10-21T08:00:00Z",
+        "direction": "inbound",
+        "last_type": "sms",
+        "last_sms_id": 101,
+        "unread_count": 1,
+        "message_count": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_cd
+bundle: Orange_cd.bundle
+supported_plmns:
+    - "63086"

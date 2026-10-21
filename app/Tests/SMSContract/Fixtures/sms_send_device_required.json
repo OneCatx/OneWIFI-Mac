@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-SEND-DEVICE-REQUIRED",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "device_required",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "Missing device_id → device_required"
+  },
+  "request": {
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "device_required",
+      "message": "a sending device is required"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-PROBE-OK",
+    "method": "POST",
+    "path": "/api/upstream-proxies/up-socks-sg-01/actions/probe",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "WEB handleUpstreamProbe; status probed + probeMap fields"
+  },
+  "response": {
+    "data": {
+      "status": "probed",
+      "probe": {
+        "reachable": true,
+        "handshake_ok": true,
+        "udp_associate_ok": true,
+        "udp_exchange_ok": true,
+        "auth_method": "username_password",
+        "relay_addr": "203.0.113.10:40000",
+        "dns_server": "1.1.1.1:53",
+        "dns_name": "example.com",
+        "dns_rcode": 0,
+        "round_trip_ms": 42,
+        "diagnosis": "ok",
+        "hint": ""
+      },
+      "message": "SOCKS5 认证与真实 UDP 往返探测通过。"
+    }
+  }
+}

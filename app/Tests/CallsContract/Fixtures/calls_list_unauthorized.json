@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "id": "FX-LIST-UNAUTHORIZED",
+    "method": "GET",
+    "path": "/api/devices/dev-ec25-01/calls",
+    "http_status": 401,
+    "auth_mode": "none",
+    "expected_code": "unauthorized",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Accept": "application/json"
+    },
+    "notes": "Missing Bearer → unauthorized (P2 auth envelope)"
+  },
+  "response": {
+    "error": {
+      "code": "unauthorized",
+      "message": "authentication required"
+    }
+  }
+}

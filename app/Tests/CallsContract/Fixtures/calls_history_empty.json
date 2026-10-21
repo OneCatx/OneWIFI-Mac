@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "id": "FX-HISTORY-EMPTY",
+    "method": "GET",
+    "path": "/api/devices/dev-ec25-01/calls/history",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "Empty history is valid"
+  },
+  "response": {
+    "data": {
+      "calls": []
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-SEND-MGR-UNAVAIL",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 503,
+    "auth_mode": "bearer",
+    "expected_code": "device_manager_unavailable",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "devices == nil → device_manager_unavailable"
+  },
+  "request": {
+    "device_id": "dev-ec25-01",
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "device_manager_unavailable",
+      "message": "device manager is unavailable"
+    }
+  }
+}

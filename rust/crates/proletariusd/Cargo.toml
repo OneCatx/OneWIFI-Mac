@@ -1,0 +1,35 @@
+[package]
+name = "proletariusd"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+base64.workspace = true
+proletarius-call = { path = "../proletarius-call" }
+bytes.workspace = true
+getrandom.workspace = true
+http-body-util.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+nix.workspace = true
+proletarius-api-contract = { path = "../proletarius-api-contract" }
+proletarius-domain = { path = "../proletarius-domain" }
+proletarius-ike = { path = "../proletarius-ike" }
+proletarius-ims = { path = "../proletarius-ims" }
+proletarius-reader = { path = "../proletarius-reader" }
+proletarius-sim = { path = "../proletarius-sim" }
+proletarius-sms = { path = "../proletarius-sms" }
+proletarius-store = { path = "../proletarius-store" }
+proletarius-vowifi = { path = "../proletarius-vowifi" }
+serde.workspace = true
+serde_json.workspace = true
+sha1.workspace = true
+subtle.workspace = true
+tokio.workspace = true
+zeroize.workspace = true
+
+[[bin]]
+name = "switchd-rs"
+path = "src/main.rs"

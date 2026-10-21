@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-INVALID-ID",
+    "method": "POST",
+    "path": "/api/upstream-proxies",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_proxy_id",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json"
+    },
+    "notes": "ID with spaces fails validObjectID"
+  },
+  "request": {
+    "id": "invalid id with spaces",
+    "name": "Bad",
+    "addr": "127.0.0.1:1080",
+    "enabled": true
+  },
+  "response": {
+    "error": {
+      "code": "invalid_proxy_id",
+      "message": "proxy ID must use 1-64 safe characters"
+    }
+  }
+}

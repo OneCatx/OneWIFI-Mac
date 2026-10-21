@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "id": "FX-HTTPS-UNAUTHORIZED",
+    "method": "GET",
+    "path": "/api/settings/https",
+    "http_status": 401,
+    "auth_mode": "none",
+    "expected_code": "unauthorized",
+    "notes": "Missing/invalid Bearer on HTTPS settings"
+  },
+  "response": {
+    "error": {
+      "code": "unauthorized",
+      "message": "authentication required"
+    }
+  }
+}

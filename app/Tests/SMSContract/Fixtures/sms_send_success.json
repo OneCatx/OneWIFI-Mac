@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "id": "FX-SEND-OK",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 202,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "WEB handleSMSSend all-parts-accepted → 202; outcome from smsSendOutcome; transport cellular_at|ims"
+  },
+  "request": {
+    "device_id": "dev-ec25-01",
+    "phone": "+447700900123",
+    "message": "Ack"
+  },
+  "response": {
+    "data": {
+      "message_id": "at-submit:867394042309830:7:1729500000000000000",
+      "id": 101,
+      "parts_total": 1,
+      "parts_attempted": 1,
+      "parts_accepted": 1,
+      "all_parts_accepted": true,
+      "concat_reference": 0,
+      "part_results": [
+        {
+          "index": 1,
+          "accepted": true,
+          "message_reference": 7
+        }
+      ],
+      "delivery_state": "accepted_by_modem",
+      "submission_state": "accepted",
+      "message_reference": 7,
+      "reference_known": true,
+      "submission_accepted": true,
+      "delivery_confirmed": false,
+      "outcome": "accepted_unconfirmed",
+      "transport": "cellular_at"
+    }
+  }
+}

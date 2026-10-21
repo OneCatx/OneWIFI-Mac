@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "id": "FX-HTTPS-UNAVAILABLE",
+    "method": "GET",
+    "path": "/api/settings/https",
+    "http_status": 503,
+    "auth_mode": "bearer",
+    "expected_code": "https_unavailable",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log"
+    },
+    "notes": "https manager nil"
+  },
+  "response": {
+    "error": {
+      "code": "https_unavailable",
+      "message": "self-signed HTTPS is unavailable"
+    }
+  }
+}

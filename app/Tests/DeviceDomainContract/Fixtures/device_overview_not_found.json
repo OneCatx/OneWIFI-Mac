@@ -1,0 +1,19 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-OVERVIEW-NOT-FOUND",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices/missing-id/overview",
+                  "method":  "GET",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "expected_code":  "device_not_found",
+                  "http_status":  404
+              },
+    "response":  {
+                     "error":  {
+                                   "code":  "device_not_found",
+                                   "message":  "device was not found or is not configured"
+                               }
+                 }
+}

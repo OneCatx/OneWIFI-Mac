@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "id": "FX-CONTACTS-UNAUTHORIZED",
+    "method": "GET",
+    "path": "/api/sms/contacts",
+    "http_status": 401,
+    "auth_mode": "none",
+    "expected_code": "unauthorized",
+    "notes": "Missing/invalid Bearer on SMS domain"
+  },
+  "response": {
+    "error": {
+      "code": "unauthorized",
+      "message": "authentication required"
+    }
+  }
+}

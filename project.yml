@@ -1,0 +1,49 @@
+name: OneWIFI
+options:
+  bundleIdPrefix: com.oneims.onewifi
+  createIntermediateGroups: true
+  deploymentTarget:
+    macOS: "27.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "27.0"
+    CLANG_ENABLE_MODULES: YES
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    ENABLE_APP_SANDBOX: NO
+    ENABLE_HARDENED_RUNTIME: NO
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "267"
+    DISPLAY_NAME: "OneWIFI"
+
+targets:
+  OneWIFI:
+    type: application
+    platform: macOS
+    productName: OneWIFI
+    sources:
+      - path: app/Sources
+      - path: app/Resources/Icons
+      - path: app/Resources/Assets.xcassets
+      - path: app/Resources/Ringtones
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.oneims.onewifi.mac
+        PRODUCT_NAME: OneWIFI
+        INFOPLIST_FILE: app/Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_OPTIMIZATION_LEVEL: "-O"
+        SWIFT_COMPILATION_MODE: wholemodule
+        COMBINE_HIDPI_IMAGES: YES
+    scheme:
+      testTargets: []
+      gatherCoverageData: false
+    postBuildScripts:
+      - name: 构建并嵌入 Go 与 Rust 迁移后端
+        basedOnDependencyAnalysis: false
+        script: |
+          "${PROJECT_DIR}/scripts/build-backends.sh"

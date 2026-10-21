@@ -1,0 +1,19 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DEVICES-MGR-UNAVAIL",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices/actions/rescan",
+                  "method":  "POST",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "expected_code":  "device_manager_unavailable",
+                  "http_status":  503
+              },
+    "response":  {
+                     "error":  {
+                                   "code":  "device_manager_unavailable",
+                                   "message":  "device manager is unavailable"
+                               }
+                 }
+}

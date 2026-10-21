@@ -1,0 +1,52 @@
+{
+  "_meta": {
+    "id": "FX-SEND-SUBMISSION-FAILED",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 502,
+    "auth_mode": "bearer",
+    "expected_code": "sms_submission_failed",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "Modem interacted but no acceptance proof; data.retry_safe=false; do not blind-retry multipart"
+  },
+  "request": {
+    "device_id": "dev-ec25-01",
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "sms_submission_failed",
+      "message": "The modem did not provide complete proof that the SMS was accepted. Inspect part_results before retrying."
+    },
+    "data": {
+      "message_id": "at-submit:867394042309830:0:1729500001000000000",
+      "id": 102,
+      "parts_total": 1,
+      "parts_attempted": 1,
+      "parts_accepted": 0,
+      "all_parts_accepted": false,
+      "concat_reference": 0,
+      "part_results": [
+        {
+          "index": 1,
+          "accepted": false,
+          "message_reference": 0
+        }
+      ],
+      "delivery_state": "failed",
+      "submission_state": "failed",
+      "message_reference": 0,
+      "reference_known": false,
+      "submission_accepted": false,
+      "delivery_confirmed": false,
+      "outcome": "failed",
+      "transport": "cellular_at",
+      "retry_safe": false
+    }
+  }
+}

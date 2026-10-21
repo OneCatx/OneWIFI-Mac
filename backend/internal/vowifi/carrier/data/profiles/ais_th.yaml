@@ -1,0 +1,103 @@
+version: 3
+kind: carrier_bundle
+id: apple_ais_th
+bundle: AIS_th.bundle
+supported_plmns:
+    - "52001"
+    - "52003"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 11393
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: false
+    entitlement:
+        entitlement_url: https://es.ais.co.th
+    ims:
+        apn: ims
+        domain: ims.mnc003.mcc520.3gppnetwork.org
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - source_branch: FirstChild
+                      encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      rekey_pfs_group: 14
+                      esn: auto
+                      install_policies: true
+                      lifetime_seconds: 80000
+                replay_window_size: 12
+            dpd:
+                enabled: false
+                interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - 14
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
+        impi_format: imsi@carrierDomain
+        ip_stack: ipv6
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "404"
+                    - "414"
+                    - "499"
+                    - "500"
+                    - "503"
+                    - "606"
+            early_media_needs_header: true
+            max_udp_message_size: 1200
+            preconditions: supported
+            require_preconditions_when_mandatory: false
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
+plmn_overrides:
+    "52001":
+        ims:
+            epdg:
+                candidates:
+                    - address: epdg.epc.mnc003.mcc520.pub.3gppnetwork.org
+                      source: uicc
+                      priority: 20

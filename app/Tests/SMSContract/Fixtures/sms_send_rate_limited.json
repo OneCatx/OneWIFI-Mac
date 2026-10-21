@@ -1,0 +1,37 @@
+{
+  "_meta": {
+    "id": "FX-SEND-RATE-LIMITED",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 429,
+    "auth_mode": "bearer",
+    "expected_code": "sms_rate_limited",
+    "response_headers": {
+      "Retry-After": "3600"
+    },
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "Global hourly SMS limit; Mac must surface Retry-After + data.limit/used/remaining/reset_at"
+  },
+  "request": {
+    "device_id": "dev-ec25-01",
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "sms_rate_limited",
+      "message": "Global SMS limit reached: at most 30 messages may be submitted in a rolling one-hour window."
+    },
+    "data": {
+      "limit": 30,
+      "used": 30,
+      "remaining": 0,
+      "reset_at": "2026-10-21T09:00:00Z",
+      "retry_after": 3600
+    }
+  }
+}

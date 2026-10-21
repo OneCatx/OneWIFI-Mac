@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-SEND-PHYS-MISSING",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 503,
+    "auth_mode": "bearer",
+    "expected_code": "physical_device_missing",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "Configured device has no live physical modem"
+  },
+  "request": {
+    "device_id": "dev-ec25-01",
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "physical_device_missing",
+      "message": "the configured device is not currently present"
+    }
+  }
+}

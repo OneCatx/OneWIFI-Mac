@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "id": "FX-INVALID-CERTIFICATE",
+    "method": "PUT",
+    "path": "/api/settings/https/custom",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_certificate",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json"
+    },
+    "notes": "Bad PEM on custom install"
+  },
+  "request": {
+    "certificate": "not-a-pem",
+    "private_key": "not-a-key"
+  },
+  "response": {
+    "error": {
+      "code": "invalid_certificate",
+      "message": "certificate or private key is invalid"
+    }
+  }
+}

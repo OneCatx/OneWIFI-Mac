@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-LOGIN-OK",
+    "method": "POST",
+    "path": "/api/auth/login",
+    "http_status": 200,
+    "auth_mode": "none",
+    "notes": "WEB server_auth.go handleLogin success envelope; Mac must persist session_token only (Bearer); never log token"
+  },
+  "request": {
+    "username": "admin",
+    "password": "correct-horse-battery"
+  },
+  "response": {
+    "data": {
+      "user": {
+        "username": "admin"
+      },
+      "csrf_token": "csrf-fixture-not-for-native-writes",
+      "session_token": "sess-fixture-token-do-not-log",
+      "expires_at": "2026-10-22T08:00:00Z",
+      "authenticated": true,
+      "status": "ok"
+    }
+  }
+}

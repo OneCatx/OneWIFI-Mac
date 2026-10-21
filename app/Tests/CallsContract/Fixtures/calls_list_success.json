@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "id": "FX-LIST-OK",
+    "method": "GET",
+    "path": "/api/devices/dev-ec25-01/calls",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "WEB call_api.go handleCalls; control-plane active list only; no WebRTC"
+  },
+  "response": {
+    "data": {
+      "calls": [
+        {
+          "id": "cellular-fixture-01",
+          "number": "+447700900123",
+          "direction": "outbound",
+          "state": "dialing",
+          "started_at": "2026-10-21T10:00:00Z",
+          "ringback": "local"
+        }
+      ]
+    }
+  }
+}

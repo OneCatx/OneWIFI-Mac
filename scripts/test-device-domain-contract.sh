@@ -1,0 +1,15 @@
+#!/bin/sh
+# Offline Device domain contract fixtures (MAC-P3 / T33.6).
+# Never connects to a live WEB gateway, Keychain, or local UDS backend.
+set -eu
+SWITCH_SOURCE_ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
+. "$SWITCH_SOURCE_ROOT/scripts/workspace-env.sh"
+ROOT=$(CDPATH= cd -- "$(dirname "$0")/.." && pwd)
+TMP=$(mktemp -d "${TMPDIR:-/tmp}/onewifi-device-domain-contract.XXXXXX")
+trap 'rm -rf "$TMP"' EXIT INT TERM
+
+xcrun swiftc -parse-as-library \
+  "$ROOT/app/Tests/DeviceDomainContract/main.swift" \
+  -o "$TMP/device-domain-contract-tests"
+
+"$TMP/device-domain-contract-tests"

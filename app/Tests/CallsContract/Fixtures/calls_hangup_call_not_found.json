@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-HANGUP-CALL-NOT-FOUND",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/hangup",
+    "http_status": 404,
+    "auth_mode": "bearer",
+    "expected_code": "call_not_found",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "ims.ErrCallNotFound → call_not_found"
+  },
+  "request": {
+    "id": "cellular-missing-99"
+  },
+  "response": {
+    "error": {
+      "code": "call_not_found",
+      "message": "call was not found"
+    }
+  }
+}

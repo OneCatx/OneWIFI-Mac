@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "id": "FX-GOLDEN-PATH",
+    "notes": "MAC-RP3 Calls golden path: list → dial → answer → hangup → history; shared device_id + call_id; no WebRTC"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "fixture": "calls_list_success.json",
+      "path": "/api/devices/dev-ec25-01/calls",
+      "expect_device_id": "dev-ec25-01",
+      "expect_call_id": "cellular-fixture-01",
+      "expect_number": "+447700900123"
+    },
+    {
+      "order": 2,
+      "fixture": "calls_dial_success.json",
+      "path": "/api/devices/dev-ec25-01/calls/dial",
+      "expect_device_id": "dev-ec25-01",
+      "expect_call_id": "cellular-fixture-01",
+      "expect_number": "+447700900123"
+    },
+    {
+      "order": 3,
+      "fixture": "calls_answer_success.json",
+      "path": "/api/devices/dev-ec25-01/calls/answer",
+      "expect_device_id": "dev-ec25-01",
+      "expect_call_id": "cellular-fixture-01",
+      "expect_number": "+447700900123"
+    },
+    {
+      "order": 4,
+      "fixture": "calls_hangup_success.json",
+      "path": "/api/devices/dev-ec25-01/calls/hangup",
+      "expect_device_id": "dev-ec25-01",
+      "expect_call_id": "cellular-fixture-01",
+      "expect_number": "+447700900123"
+    },
+    {
+      "order": 5,
+      "fixture": "calls_history_success.json",
+      "path": "/api/devices/dev-ec25-01/calls/history",
+      "expect_device_id": "dev-ec25-01",
+      "expect_call_id": "cellular-fixture-01",
+      "expect_number": "+447700900123"
+    }
+  ],
+  "forbidden": [
+    {
+      "method": "ANY",
+      "path": "/api/instances*",
+      "reason": "MDD forbidden on Mac gateway client"
+    },
+    {
+      "method": "ANY",
+      "path": "/api/devices/{id}/calls/webrtc*",
+      "reason": "WebRTC media engine excluded from MAC-RP3"
+    },
+    {
+      "method": "GET",
+      "path": "/api/calls/events",
+      "reason": "SSE excluded"
+    }
+  ]
+}

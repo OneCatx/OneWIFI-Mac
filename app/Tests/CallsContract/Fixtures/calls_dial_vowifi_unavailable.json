@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-DIAL-VOWIFI-UNAVAIL",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/dial",
+    "http_status": 503,
+    "auth_mode": "bearer",
+    "expected_code": "vowifi_runtime_unavailable",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "No call controller → vowifi_runtime_unavailable"
+  },
+  "request": {
+    "number": "+447700900123"
+  },
+  "response": {
+    "error": {
+      "code": "vowifi_runtime_unavailable",
+      "message": "VoWiFi runtime is unavailable"
+    }
+  }
+}

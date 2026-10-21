@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "id": "FX-HTTPS-CERT-PEM-OK",
+    "method": "GET",
+    "path": "/api/settings/https/certificate",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "content_type": "application/x-pem-file",
+    "content_disposition": "attachment; filename=\"onewifi-selfsigned.crt\"",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/x-pem-file, application/json"
+    },
+    "notes": "Certificate endpoint returns PEM attachment (non-JSON body); fixture records headers + PEM sample"
+  },
+  "response": {
+    "body_encoding": "pem",
+    "body": "-----BEGIN CERTIFICATE-----\nMIIBfjCCAWSgAwIBAgIUFixtureOnlyDoNotTrustMB4XDTI2MTAyMTAwMDAwMFoX\nDTI3MTAyMTAwMDAwMFowGDEWMBQGA1UEAwwNZ2F0ZXdheS5leGFtcGxlMFwwDQYJ\nKoZIhvcNAQEBBQADSwAwSAJBAFixtureSampleKeyMaterialOnlyForOfflineQA\n-----END CERTIFICATE-----\n"
+  }
+}

@@ -1,0 +1,81 @@
+version: 3
+kind: carrier_bundle
+id: apple_entelpcs_cl
+bundle: EntelPCS_cl.bundle
+supported_plmns:
+    - "73001"
+    - "73010"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 525329
+    e911:
+        emergency_urns:
+            "112": urn:service:sos.police
+            "131": urn:service:sos.ambulance
+            "132": urn:service:sos.fire
+            "133": urn:service:sos.police
+            "136": urn:service:sos.mountain
+            "137": urn:service:sos.marine
+            "911": urn:service:sos.police
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
+    entitlement:
+        entitlement_url: https://aes.mnc001.mcc730.pub.3gppnetwork.org:3444/entitlement/
+    ims:
+        apn: ims
+        domain: ims.mnc001.mcc730.3gppnetwork.org
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - source_branch: FirstChild
+                      encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      esn: auto
+                      install_policies: true
+                      lifetime_seconds: 86400
+                replay_window_size: 12
+            dpd:
+                enabled: false
+                interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        impi_format: imsi@carrierDomain
+        impu_format: imsi@carrierDomain
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 15
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 15
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            early_media_needs_header: true
+            require_preconditions_when_mandatory: false
+            sip_timers:
+                InviteResponseTimeout: 5000
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true

@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "id": "FX-THREAD-OK",
+    "method": "GET",
+    "path": "/api/sms/thread",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "query": {
+      "device_id": "dev-ec25-01",
+      "peer": "+447700900123",
+      "iccid": "89860000000000000001",
+      "limit": "100"
+    },
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "WEB storedSMSResponse; peer required; body/content twin; chronological after reverseSMS"
+  },
+  "response": {
+    "data": [
+      {
+        "id": 100,
+        "message_id": "modem:867394042309830:1",
+        "device_id": "dev-ec25-01",
+        "modem_imei": "867394042309830",
+        "iccid": "89860000000000000001",
+        "imsi": "460001234567890",
+        "local_phone": "+8613800138000",
+        "peer": "+447700900123",
+        "direction": "inbound",
+        "body": "Hello from peer",
+        "content": "Hello from peer",
+        "sender": "+447700900123",
+        "recipient": "",
+        "type": "sms",
+        "timestamp": "2026-10-21T07:59:00Z",
+        "status": "received",
+        "source": "cellular_at",
+        "parts_total": 1,
+        "delivery_state": "delivered"
+      },
+      {
+        "id": 101,
+        "message_id": "at-submit:867394042309830:7:1729500000000000000",
+        "device_id": "dev-ec25-01",
+        "modem_imei": "867394042309830",
+        "iccid": "89860000000000000001",
+        "imsi": "460001234567890",
+        "local_phone": "+8613800138000",
+        "peer": "+447700900123",
+        "direction": "outbound",
+        "body": "Ack",
+        "content": "Ack",
+        "sender": "",
+        "recipient": "+447700900123",
+        "type": "sms",
+        "timestamp": "2026-10-21T08:00:00Z",
+        "status": "accepted",
+        "source": "cellular_at",
+        "parts_total": 1,
+        "delivery_state": "accepted_by_modem"
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "_meta": {
+    "id": "FX-GOLDEN-PATH",
+    "notes": "MAC-P5 PROXY+CERT golden path: upstream list → PATCH enable → probe; HTTPS settings → certificate PEM; shared proxy id"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "ticket": "TICKET-MAC-P5-PROXY",
+      "path": "/api/upstream-proxies",
+      "fixture": "upstream_proxies_list_success.json",
+      "expect_proxy_id": "up-socks-sg-01"
+    },
+    {
+      "order": 2,
+      "ticket": "TICKET-MAC-P5-PROXY",
+      "path": "/api/upstream-proxies/up-socks-sg-01",
+      "fixture": "upstream_proxy_patch_enable_success.json",
+      "expect_proxy_id": "up-socks-sg-01"
+    },
+    {
+      "order": 3,
+      "ticket": "TICKET-MAC-P5-PROXY",
+      "path": "/api/upstream-proxies/up-socks-sg-01/actions/probe",
+      "fixture": "upstream_proxy_probe_success.json",
+      "expect_proxy_id": "up-socks-sg-01"
+    },
+    {
+      "order": 4,
+      "ticket": "TICKET-MAC-P5-CERT",
+      "path": "/api/settings/https",
+      "fixture": "https_settings_success.json",
+      "expect_proxy_id": ""
+    },
+    {
+      "order": 5,
+      "ticket": "TICKET-MAC-P5-CERT",
+      "path": "/api/settings/https/certificate",
+      "fixture": "https_certificate_pem_success.json",
+      "expect_proxy_id": ""
+    }
+  ],
+  "forbidden": [
+    {
+      "path": "/api/instances*",
+      "reason": "MDD legacy; Mac remote must not use"
+    },
+    {
+      "path": "/api/local-proxy*",
+      "reason": "local Mihomo/前置代理 ≠ upstream; Keep C1"
+    },
+    {
+      "path": "/api/devices/{id}/esim*",
+      "reason": "eSIM not in MAC-P5 two-ticket scope"
+    },
+    {
+      "path": "/api/devices/{id}/calls*",
+      "reason": "Calls still deferred; not P5 tickets"
+    }
+  ]
+}

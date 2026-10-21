@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-HTTPS-SETTINGS-OK",
+    "method": "GET",
+    "path": "/api/settings/https",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "WEB https_settings.go handleHTTPSSettings GET; State fields"
+  },
+  "response": {
+    "data": {
+      "enabled": true,
+      "http_url": "http://gateway.example:8443",
+      "https_url": "https://gateway.example:8443",
+      "fingerprint": "AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99:AA:BB:CC:DD:EE:FF:00:11:22:33:44:55:66:77:88:99",
+      "not_after": "2027-10-21T00:00:00Z",
+      "source": "self_signed",
+      "names": ["gateway.example", "127.0.0.1"],
+      "covers_host": true,
+      "host": "gateway.example"
+    }
+  }
+}

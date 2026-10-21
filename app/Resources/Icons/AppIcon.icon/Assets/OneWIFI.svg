@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024" role="img" aria-label="OneWIFI">
+  <!-- Canonical mark is OneWIFI.png (family 1024). This SVG is a neutral placeholder for tooling that still expects an svg sibling; prefer the PNG in icon.json. -->
+  <rect width="1024" height="1024" rx="220" fill="#1A1B20"/>
+  <circle cx="512" cy="560" r="56" fill="#F9F9FF"/>
+  <path d="M512 420c-110 0-200 70-200 140 0 18 16 32 36 32h328c20 0 36-14 36-32 0-70-90-140-200-140z" fill="none" stroke="#F9F9FF" stroke-width="48" stroke-linecap="round"/>
+  <path d="M512 300c-170 0-310 108-310 220" fill="none" stroke="#F9F9FF" stroke-width="40" stroke-linecap="round" opacity="0.55"/>
+</svg>

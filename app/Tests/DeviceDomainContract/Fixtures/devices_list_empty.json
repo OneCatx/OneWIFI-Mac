@@ -1,0 +1,21 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DEVICES-EMPTY",
+                  "notes":  "Empty fleet still returns device_limit",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices",
+                  "method":  "GET",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "http_status":  200
+              },
+    "response":  {
+                     "data":  {
+                                  "devices":  [
+
+                                              ],
+                                  "device_limit":  8
+                              }
+                 }
+}

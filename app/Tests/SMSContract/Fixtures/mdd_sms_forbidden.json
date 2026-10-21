@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "id": "ISO-NO-MDD-SMS",
+    "notes": "Documentation fixture: Mac GatewayHTTPClient must never call MDD SMS paths",
+    "forbidden_paths": [
+      "/api/instances/{id}/sms",
+      "/api/instances/{id}/sms/send",
+      "/api/instances/{id}/messages"
+    ],
+    "required_paths": [
+      "/api/sms/contacts",
+      "/api/sms/thread",
+      "/api/sms/send"
+    ]
+  }
+}

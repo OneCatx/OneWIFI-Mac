@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "id": "FX-ANSWER-OK",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/answer",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "handleCallAction answer → Call with state active"
+  },
+  "request": {
+    "id": "cellular-fixture-01"
+  },
+  "response": {
+    "data": {
+      "id": "cellular-fixture-01",
+      "number": "+447700900123",
+      "direction": "inbound",
+      "state": "active",
+      "started_at": "2026-10-21T10:00:05Z",
+      "media_ready": true
+    }
+  }
+}

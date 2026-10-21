@@ -1,0 +1,78 @@
+version: 3
+kind: carrier_bundle
+id: apple_hutchison_uk
+bundle: Hutchison_uk.bundle
+supported_plmns:
+    - "23420"
+plmn_overrides:
+    "23420":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4207617
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+        entitlement:
+            entitlement_url: https://esim-es-open-prod-tuk.esimcloud.net/tuk/prod/executeAppleActions
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
+                child_sa:
+                    proposals:
+                        - source_branch: FirstChild
+                          encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          esn: auto
+                          install_policies: true
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                    replay_window_size: 12
+                local_identifier: anonymous@nai.epc.mnc020.mcc234.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc020.mcc234.pub.3gppnetwork.org
+                validate_remote_certificate: true
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                early_media_needs_header: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                require_preconditions_when_mandatory: false
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

@@ -1,0 +1,102 @@
+version: 3
+kind: carrier_bundle
+id: apple_reliancejio_in
+bundle: RelianceJio_in.bundle
+supported_plmns:
+    - "22201"
+    - "405840"
+    - "405854"
+    - "405855"
+    - "405856"
+    - "405857"
+    - "405858"
+    - "405859"
+    - "405860"
+    - "405861"
+    - "405862"
+    - "405863"
+    - "405864"
+    - "405865"
+    - "405866"
+    - "405867"
+    - "405868"
+    - "405869"
+    - "405870"
+    - "405871"
+    - "405872"
+    - "405873"
+    - "405874"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 11265
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
+    entitlement:
+        entitlement_url: https://hpdegprod.jio.com:8181/ium-OEMInterface/servlet/IUMServlet
+    ims:
+        apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - source_branch: FirstChild
+                      encryption:
+                        - aes128
+                      integrity:
+                        - sha1
+                      protocol: esp
+                      esn: auto
+                      install_policies: true
+                      secure_rekey: false
+                      lifetime_seconds: 86400
+            disable_switch_to_natt_port: true
+            dpd:
+                enabled: true
+                interval_seconds: 300
+                max_retries: 4
+                retry_interval_seconds: 10
+            local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha1
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - 2
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            early_media_needs_header: true
+            preconditions: unsupported
+            re_register_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+            require_preconditions_when_mandatory: false
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true

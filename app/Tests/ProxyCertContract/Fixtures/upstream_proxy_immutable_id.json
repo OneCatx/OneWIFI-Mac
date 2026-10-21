@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-IMMUTABLE-ID",
+    "method": "PUT",
+    "path": "/api/upstream-proxies/up-socks-sg-01",
+    "http_status": 409,
+    "auth_mode": "bearer",
+    "expected_code": "immutable_proxy_id",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json"
+    },
+    "notes": "Body id mismatches path id"
+  },
+  "request": {
+    "id": "different-id",
+    "name": "SG SOCKS5",
+    "addr": "203.0.113.10:1080",
+    "enabled": true
+  },
+  "response": {
+    "error": {
+      "code": "immutable_proxy_id",
+      "message": "upstream proxy ID cannot be changed"
+    }
+  }
+}

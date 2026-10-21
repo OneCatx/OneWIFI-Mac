@@ -1,0 +1,79 @@
+version: 3
+kind: carrier_bundle
+id: apple_dialog_lk
+bundle: Dialog_lk.bundle
+supported_plmns:
+    - "41302"
+plmn_overrides:
+    "41302":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+        entitlement:
+            entitlement_url: https://es.dialog.lk
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha1
+                      prf:
+                        - sha1
+                      dh_groups:
+                        - 2
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
+                child_sa:
+                    proposals:
+                        - source_branch: FirstChild
+                          encryption:
+                            - aes128
+                          integrity:
+                            - sha1
+                          rekey_pfs_group: 2
+                          esn: auto
+                          install_policies: true
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                    replay_window_size: 12
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                early_media_needs_header: true
+                require_preconditions_when_mandatory: false
+                contact:
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                            - +g.3gpp.mid-call
+            volte:
+                enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

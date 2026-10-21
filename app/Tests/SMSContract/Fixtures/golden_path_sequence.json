@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "id": "FX-GOLDEN-PATH",
+    "notes": "MAC-P4 SMS golden path: contacts (list) → thread (detail) → send; shared device_id + peer"
+  },
+  "steps": [
+    {
+      "order": 1,
+      "fixture": "sms_contacts_success.json",
+      "path": "/api/sms/contacts",
+      "expect_device_id": "dev-ec25-01",
+      "expect_peer": "+447700900123"
+    },
+    {
+      "order": 2,
+      "fixture": "sms_thread_success.json",
+      "path": "/api/sms/thread",
+      "expect_device_id": "dev-ec25-01",
+      "expect_peer": "+447700900123"
+    },
+    {
+      "order": 3,
+      "fixture": "sms_send_success.json",
+      "path": "/api/sms/send",
+      "expect_device_id": "dev-ec25-01",
+      "expect_peer": "+447700900123"
+    }
+  ],
+  "forbidden": [
+    {
+      "method": "GET",
+      "path": "/api/instances/{id}/sms",
+      "reason": "MDD legacy; Mac remote must use global /api/sms/*"
+    },
+    {
+      "method": "POST",
+      "path": "/api/instances/{id}/sms/send",
+      "reason": "MDD legacy send; use POST /api/sms/send"
+    },
+    {
+      "method": "ANY",
+      "path": "/api/instances*",
+      "reason": "MDD forbidden on Mac gateway client"
+    }
+  ]
+}

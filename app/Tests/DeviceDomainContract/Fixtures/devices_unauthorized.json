@@ -1,0 +1,17 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DEVICES-UNAUTHORIZED",
+                  "notes":  "Missing/invalid Bearer on device domain",
+                  "auth_mode":  "none",
+                  "path":  "/api/devices",
+                  "method":  "GET",
+                  "expected_code":  "unauthorized",
+                  "http_status":  401
+              },
+    "response":  {
+                     "error":  {
+                                   "code":  "unauthorized",
+                                   "message":  "authentication required"
+                               }
+                 }
+}

@@ -1,0 +1,19 @@
+﻿{
+  "_meta": {
+    "id": "FX-LOGIN-TOO-MANY",
+    "method": "POST",
+    "path": "/api/auth/login",
+    "http_status": 429,
+    "expected_code": "too_many_attempts",
+    "response_headers": { "Retry-After": "60" },
+    "auth_mode": "none",
+    "notes": "Rate limit / lockout; client must surface Retry-After when present"
+  },
+  "request": { "username": "admin", "password": "any" },
+  "response": {
+    "error": {
+      "code": "too_many_attempts",
+      "message": "Too many attempts"
+    }
+  }
+}

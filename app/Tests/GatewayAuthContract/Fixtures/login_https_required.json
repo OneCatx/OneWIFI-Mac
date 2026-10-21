@@ -1,0 +1,18 @@
+﻿{
+  "_meta": {
+    "id": "FX-LOGIN-HTTPS-REQUIRED",
+    "method": "POST",
+    "path": "/api/auth/login",
+    "http_status": 403,
+    "expected_code": "https_required",
+    "auth_mode": "none",
+    "notes": "WEB forces HTTPS for auth when configured; client must not treat as wrong password"
+  },
+  "request": { "username": "admin", "password": "correct-horse-battery" },
+  "response": {
+    "error": {
+      "code": "https_required",
+      "message": "HTTPS is required"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+  "_meta": {
+    "id": "FX-SESSION-EXPIRED",
+    "method": "GET",
+    "path": "/api/auth/session",
+    "http_status": 401,
+    "expected_code": "session_expired",
+    "auth_mode": "bearer",
+    "request_headers": { "Authorization": "Bearer expired-token" },
+    "notes": "Expired session; treat as signed-out; clear Keychain token"
+  },
+  "response": {
+    "error": {
+      "code": "session_expired",
+      "message": "Session expired"
+    }
+  }
+}

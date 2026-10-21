@@ -1,0 +1,18 @@
+﻿{
+  "_meta": {
+    "id": "FX-SESSION-UNAUTHORIZED",
+    "method": "GET",
+    "path": "/api/auth/session",
+    "http_status": 401,
+    "expected_code": "unauthorized",
+    "auth_mode": "bearer",
+    "request_headers": { "Authorization": "Bearer dead-token" },
+    "notes": "Missing/invalid Bearer; client onUnauthorized must clear local session"
+  },
+  "response": {
+    "error": {
+      "code": "unauthorized",
+      "message": "Authentication required"
+    }
+  }
+}

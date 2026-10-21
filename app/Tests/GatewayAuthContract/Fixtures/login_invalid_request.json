@@ -1,0 +1,18 @@
+﻿{
+  "_meta": {
+    "id": "FX-LOGIN-INVALID-REQUEST",
+    "method": "POST",
+    "path": "/api/auth/login",
+    "http_status": 400,
+    "expected_code": "invalid_request",
+    "auth_mode": "none",
+    "notes": "Malformed JSON body"
+  },
+  "request_raw": "{not-json",
+  "response": {
+    "error": {
+      "code": "invalid_request",
+      "message": "invalid character 'n' looking for beginning of object key string"
+    }
+  }
+}

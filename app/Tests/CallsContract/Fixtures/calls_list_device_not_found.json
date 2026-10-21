@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "id": "FX-LIST-DEVICE-NOT-FOUND",
+    "method": "GET",
+    "path": "/api/devices/dev-missing-99/calls",
+    "http_status": 404,
+    "auth_mode": "bearer",
+    "expected_code": "device_not_found",
+    "device_id": "dev-missing-99",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "device.ErrNotFound → device_not_found"
+  },
+  "response": {
+    "error": {
+      "code": "device_not_found",
+      "message": "device was not found"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+build/
+dist/
+.build/
+*.dmg
+.DS_Store
+*.log
+backend/proletarius-macos
+backend/proletarius-cli
+backend/proletarius-routing-helper
+backend/proletariusd
+rust/target/
+*.profraw
+.env
+.env.*
+*.p12
+*.key
+*.pcap
+fixtures/private/
+.impeccable/
+
+# Branded helper binaries (normal outputs live outside src)
+backend/switchd
+backend/switchd-rs

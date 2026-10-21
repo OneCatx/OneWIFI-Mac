@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-INVALID-ADDR",
+    "method": "POST",
+    "path": "/api/upstream-proxy-probe",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_proxy_addr",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json"
+    },
+    "notes": "Empty addr on unpersisted probe"
+  },
+  "request": {
+    "id": "",
+    "name": "",
+    "addr": "",
+    "enabled": false
+  },
+  "response": {
+    "error": {
+      "code": "invalid_proxy_addr",
+      "message": "Socks5 address is required"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-BASEURL-CASES",
+    "notes": "BaseUrlPolicy matrix aligned to Android/IOS base_url_policy.dart; Mac Gateway Origin must match"
+  },
+  "accept": [
+    { "id": "BU-OK-HTTP", "origin": "http://192.168.1.88:6699", "normalized": "http://192.168.1.88:6699" },
+    { "id": "BU-OK-HTTPS", "origin": "https://gateway.example.com", "normalized": "https://gateway.example.com" },
+    { "id": "BU-OK-TRIM", "origin": "  http://10.0.0.2:8080  ", "normalized": "http://10.0.0.2:8080" },
+    { "id": "BU-OK-DEFAULT-PORT-HTTP", "origin": "http://host.local:80", "normalized": "http://host.local" },
+    { "id": "BU-OK-DEFAULT-PORT-HTTPS", "origin": "https://host.local:443", "normalized": "https://host.local" }
+  ],
+  "reject": [
+    { "id": "BU-REJ-EMPTY", "origin": "" },
+    { "id": "BU-REJ-FTP", "origin": "ftp://192.168.1.1" },
+    { "id": "BU-REJ-USERINFO", "origin": "http://user:pass@192.168.1.1:6699" },
+    { "id": "BU-REJ-PATH", "origin": "http://192.168.1.1:6699/api" },
+    { "id": "BU-REJ-QUERY", "origin": "http://192.168.1.1:6699?x=1" },
+    { "id": "BU-REJ-FRAGMENT", "origin": "http://192.168.1.1:6699#frag" },
+    { "id": "BU-REJ-UNIX", "origin": "http+unix:///tmp/switch.sock" }
+  ],
+  "public_cleartext": [
+    { "id": "BU-CLEAR-PUBLIC", "origin": "http://example.com", "is_public_cleartext": true },
+    { "id": "BU-CLEAR-PRIVATE", "origin": "http://192.168.1.88:6699", "is_public_cleartext": false },
+    { "id": "BU-CLEAR-HTTPS", "origin": "https://example.com", "is_public_cleartext": false }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-METHOD-NOT-ALLOWED",
+    "method": "DELETE",
+    "path": "/api/upstream-proxies",
+    "http_status": 405,
+    "auth_mode": "bearer",
+    "expected_code": "method_not_allowed",
+    "allow": "GET, POST",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log"
+    },
+    "notes": "Collection DELETE not allowed; use /{id}"
+  },
+  "response": {
+    "error": {
+      "code": "method_not_allowed",
+      "message": "method not allowed"
+    }
+  }
+}

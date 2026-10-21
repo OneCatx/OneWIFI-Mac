@@ -1,0 +1,63 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_au
+bundle: Vodafone_au.bundle
+supported_plmns:
+    - "50503"
+plmn_overrides:
+    "50503":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+        entitlement:
+            entitlement_url: https://ents.mnc003.mcc505.pub.3gppnetwork.org:8443
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
+            ike:
+                child_sa:
+                    proposals:
+                        - source_branch: FirstChild
+                          encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                    replay_window_size: 12
+                local_identifier: vha@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc003.mcc505.pub.3gppnetwork.org
+                validate_remote_certificate: true
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: true
+                early_media_needs_header: true
+                require_preconditions_when_mandatory: false
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

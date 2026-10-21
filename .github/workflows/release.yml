@@ -1,0 +1,46 @@
+name: Build OneWIFI
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: src
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: src/backend/go.mod
+          cache: false
+      - uses: dtolnay/rust-toolchain@1.98.0
+        with:
+          components: clippy,rustfmt
+      - name: Install build dependencies
+        run: brew install libusb xcodegen
+      - name: Validate source version
+        working-directory: src
+        run: |
+          set -eu
+          set -- $(scripts/version.sh)
+          if [ "$GITHUB_REF_TYPE" = tag ]; then test "$GITHUB_REF_NAME" = "v$1"; fi
+      - name: Run offline-capable gates
+        working-directory: src
+        run: scripts/test-migration-gates.sh
+      - name: Build app (no disk image)
+        working-directory: src
+        run: scripts/build.sh
+      - name: Preserve application permissions
+        run: tar -czf dist/OneWIFI.app.tar.gz -C dist OneWIFI.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: OneWIFI-app
+          path: dist/OneWIFI.app.tar.gz
+          if-no-files-found: error

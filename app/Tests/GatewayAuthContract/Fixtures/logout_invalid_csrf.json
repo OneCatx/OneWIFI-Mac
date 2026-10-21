@@ -1,0 +1,17 @@
+﻿{
+  "_meta": {
+    "id": "FX-LOGOUT-INVALID-CSRF",
+    "method": "POST",
+    "path": "/api/auth/logout",
+    "http_status": 403,
+    "expected_code": "invalid_csrf",
+    "auth_mode": "cookie",
+    "notes": "Cookie-session write without valid CSRF; Mac Bearer path must NOT hit this. Fixture documents WEB code invalid_csrf (not csrf_token_missing)"
+  },
+  "response": {
+    "error": {
+      "code": "invalid_csrf",
+      "message": "Invalid CSRF token"
+    }
+  }
+}

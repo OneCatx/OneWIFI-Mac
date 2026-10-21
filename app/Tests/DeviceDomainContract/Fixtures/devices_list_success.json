@@ -1,0 +1,151 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DEVICES-OK",
+                  "notes":  "WEB handleDevices GET → {device_limit, devices[]} full summary; aligns DeviceFleetDto",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices",
+                  "method":  "GET",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "http_status":  200
+              },
+    "response":  {
+                     "data":  {
+                                  "devices":  [
+                                                  {
+                                                      "id":  "dev-ec25-01",
+                                                      "name":  "客厅 EC25",
+                                                      "device_type":  "pcie_ec20_ec25",
+                                                      "running":  true,
+                                                      "healthy":  true,
+                                                      "control_online":  true,
+                                                      "physical_present":  true,
+                                                      "worker_running":  true,
+                                                      "data_connected":  true,
+                                                      "radio_registered":  true,
+                                                      "lifecycle_phase":  "ready",
+                                                      "lifecycle_reason":  "",
+                                                      "public_ip":  "203.0.113.10",
+                                                      "private_ip":  "10.64.0.2",
+                                                      "interface":  "wwan0",
+                                                      "esim_transport":  "qmi",
+                                                      "sms_enabled":  true,
+                                                      "network_enabled":  true,
+                                                      "developer_enabled":  true,
+                                                      "network_connected":  true,
+                                                      "vowifi_enabled":  true,
+                                                      "vowifi_active":  false,
+                                                      "flight_mode":  false,
+                                                      "proxy_port":  1080,
+                                                      "local_phone":  "13800138000",
+                                                      "phone_number_source":  "sim",
+                                                      "registration_state_label":  "registered",
+                                                      "modem":  {
+                                                                    "phone_number":  "13800138000",
+                                                                    "card_country":  "China",
+                                                                    "native_mnc":  "00",
+                                                                    "signal_rsrq":  -10,
+                                                                    "service_blocked":  false,
+                                                                    "imei":  "860000000000001",
+                                                                    "radio_band":  "B3",
+                                                                    "firmware":  "EC25EFAR06A01M4G",
+                                                                    "card_mcc":  "460",
+                                                                    "signal_sinr":  12,
+                                                                    "signal_rsrp":  -95,
+                                                                    "reg_status":  1,
+                                                                    "home_carrier_country_code":  "CN",
+                                                                    "network_duplex":  "",
+                                                                    "model":  "EC25",
+                                                                    "home_carrier_name":  "CMCC",
+                                                                    "imsi":  "460000000000001",
+                                                                    "card_mnc":  "00",
+                                                                    "sim_inserted":  true,
+                                                                    "home_carrier_plmn":  "46000",
+                                                                    "network_mode":  "LTE",
+                                                                    "native_mcc":  "460",
+                                                                    "operator":  "CMCC",
+                                                                    "operating_mode":  1,
+                                                                    "ps_attached":  true,
+                                                                    "blocked_reason":  "",
+                                                                    "native_spn":  "CMCC",
+                                                                    "operator_country_code":  "CN",
+                                                                    "signal_dbm":  -85,
+                                                                    "iccid":  "89860000000000000001",
+                                                                    "phone_number_source":  "sim",
+                                                                    "reg_status_text":  "registered home",
+                                                                    "radio_channel":  1650
+                                                                },
+                                                      "vowifi_runtime":  {
+                                                                             "sim_ready":  true,
+                                                                             "access_ready":  false,
+                                                                             "sms_ready":  false,
+                                                                             "device_id":  "dev-ec25-01",
+                                                                             "reg_status":  0,
+                                                                             "phase":  "idle",
+                                                                             "local_phone":  "13800138000",
+                                                                             "active":  false,
+                                                                             "dataplane_mode":  "",
+                                                                             "ims_ready":  false,
+                                                                             "iccid":  "89860000000000000001",
+                                                                             "reg_status_text":  "not started",
+                                                                             "imsi":  "460000000000001",
+                                                                             "phone_number_source":  "sim",
+                                                                             "tunnel_ready":  false,
+                                                                             "enabled":  false,
+                                                                             "network_mode":  "",
+                                                                             "last_error_class":  "",
+                                                                             "last_error":  "",
+                                                                             "last_reason":  "disabled",
+                                                                             "updated_at":  "2026-10-21T08:00:00Z"
+                                                                         },
+                                                      "esim_switch":  {
+                                                                          "step":  0,
+                                                                          "steps":  [
+                                                                                        {
+                                                                                            "label":  "停网",
+                                                                                            "pending":  false,
+                                                                                            "key":  "stop",
+                                                                                            "ready":  false,
+                                                                                            "failed":  false
+                                                                                        },
+                                                                                        {
+                                                                                            "label":  "飞行",
+                                                                                            "pending":  false,
+                                                                                            "key":  "flight",
+                                                                                            "ready":  false,
+                                                                                            "failed":  false
+                                                                                        },
+                                                                                        {
+                                                                                            "label":  "写卡",
+                                                                                            "pending":  false,
+                                                                                            "key":  "write",
+                                                                                            "ready":  false,
+                                                                                            "failed":  false
+                                                                                        },
+                                                                                        {
+                                                                                            "label":  "校验",
+                                                                                            "pending":  false,
+                                                                                            "key":  "check",
+                                                                                            "ready":  false,
+                                                                                            "failed":  false
+                                                                                        },
+                                                                                        {
+                                                                                            "label":  "恢复",
+                                                                                            "pending":  false,
+                                                                                            "key":  "back",
+                                                                                            "ready":  false,
+                                                                                            "failed":  false
+                                                                                        }
+                                                                                    ],
+                                                                          "active":  false,
+                                                                          "recoverable":  true,
+                                                                          "phase":  "",
+                                                                          "status":  ""
+                                                                      }
+                                                  }
+                                              ],
+                                  "device_limit":  8
+                              }
+                 }
+}

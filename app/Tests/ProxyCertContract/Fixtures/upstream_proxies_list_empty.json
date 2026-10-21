@@ -1,0 +1,17 @@
+{
+  "_meta": {
+    "id": "FX-PROXY-LIST-EMPTY",
+    "method": "GET",
+    "path": "/api/upstream-proxies",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "Empty upstream proxy list is valid 200"
+  },
+  "response": {
+    "data": []
+  }
+}

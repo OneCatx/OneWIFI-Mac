@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "id": "FX-CONTACTS-EMPTY",
+    "method": "GET",
+    "path": "/api/sms/contacts",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "query": {
+      "device_id": "all"
+    },
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "Empty inbox; device_id=all normalizes to unfiltered store query"
+  },
+  "response": {
+    "data": []
+  }
+}

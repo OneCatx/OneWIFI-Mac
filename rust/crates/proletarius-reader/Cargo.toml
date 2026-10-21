@@ -1,0 +1,10 @@
+[package]
+name = "proletarius-reader"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+pcsc.workspace = true
+proletarius-sim = { path = "../proletarius-sim" }

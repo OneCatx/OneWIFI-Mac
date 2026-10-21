@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "id": "ISO-NO-MDD-CALLS",
+    "notes": "Mac GatewayHTTPClient must never call MDD call paths",
+    "forbidden_paths": [
+      "/api/instances/{id}/call",
+      "/api/instances/{id}/calls",
+      "/api/instances/{id}/calls/dial"
+    ],
+    "required_paths": [
+      "/api/devices/{id}/calls",
+      "/api/devices/{id}/calls/dial",
+      "/api/devices/{id}/calls/answer",
+      "/api/devices/{id}/calls/hangup",
+      "/api/devices/{id}/calls/history"
+    ]
+  }
+}

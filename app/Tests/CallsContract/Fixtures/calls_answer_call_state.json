@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-ANSWER-CALL-STATE",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/answer",
+    "http_status": 409,
+    "auth_mode": "bearer",
+    "expected_code": "call_state",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "ims.ErrCallState → call_state"
+  },
+  "request": {
+    "id": "cellular-fixture-01"
+  },
+  "response": {
+    "error": {
+      "code": "call_state",
+      "message": "call is not in a state that allows this action"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_meta": {
+    "id": "FX-SEND-FEATURE-UNSUPPORTED",
+    "method": "POST",
+    "path": "/api/sms/send",
+    "http_status": 501,
+    "auth_mode": "bearer",
+    "expected_code": "device_feature_unsupported",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "wifi_410 OpenStick backend rejects SMS"
+  },
+  "request": {
+    "device_id": "dev-wifi410-01",
+    "phone": "+447700900123",
+    "message": "hi"
+  },
+  "response": {
+    "error": {
+      "code": "device_feature_unsupported",
+      "message": "SMS is not supported by the native OpenStick 410 backend"
+    }
+  }
+}

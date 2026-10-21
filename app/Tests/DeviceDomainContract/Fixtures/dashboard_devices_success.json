@@ -1,0 +1,56 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DASHBOARD-OK",
+                  "notes":  "WEB device_api.go dashboard/devices → data is slim card array (not {devices:[]})",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/dashboard/devices",
+                  "method":  "GET",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "http_status":  200
+              },
+    "response":  {
+                     "data":  [
+                                  {
+                                      "id":  "dev-ec25-01",
+                                      "name":  "客厅 EC25",
+                                      "device_type":  "pcie_ec20_ec25",
+                                      "interface":  "wwan0",
+                                      "proxy_port":  1080,
+                                      "public_ip":  "203.0.113.10",
+                                      "healthy":  true,
+                                      "operator":  "CMCC",
+                                      "signal_dbm":  -85,
+                                      "network_mode":  "LTE",
+                                      "network_duplex":  "",
+                                      "vowifi_active":  false,
+                                      "vowifi_runtime":  {
+                                                             "sim_ready":  true,
+                                                             "access_ready":  false,
+                                                             "sms_ready":  false,
+                                                             "device_id":  "dev-ec25-01",
+                                                             "reg_status":  0,
+                                                             "phase":  "idle",
+                                                             "local_phone":  "13800138000",
+                                                             "active":  false,
+                                                             "dataplane_mode":  "",
+                                                             "ims_ready":  false,
+                                                             "iccid":  "89860000000000000001",
+                                                             "reg_status_text":  "not started",
+                                                             "imsi":  "460000000000001",
+                                                             "phone_number_source":  "sim",
+                                                             "tunnel_ready":  false,
+                                                             "enabled":  false,
+                                                             "network_mode":  "",
+                                                             "last_error_class":  "",
+                                                             "last_error":  "",
+                                                             "last_reason":  "disabled",
+                                                             "updated_at":  "2026-10-21T08:00:00Z"
+                                                         },
+                                      "network_connected":  true,
+                                      "model":  "EC25"
+                                  }
+                              ]
+                 }
+}

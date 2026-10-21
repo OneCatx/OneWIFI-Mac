@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "id": "ISO-NO-WEBRTC",
+    "notes": "MAC-RP3 control plane only; WebRTC / SSE / media-ticket excluded (T40.2-no-webrtc)",
+    "forbidden_paths": [
+      "/api/devices/{id}/calls/webrtc",
+      "/api/devices/{id}/calls/webrtc/offer",
+      "/api/devices/{id}/calls/media",
+      "/api/devices/{id}/calls/media-ticket",
+      "/api/calls/media/capabilities",
+      "/api/calls/events",
+      "/api/calls/push"
+    ],
+    "allowed_control_plane_paths": [
+      "/api/devices/{id}/calls",
+      "/api/devices/{id}/calls/dial",
+      "/api/devices/{id}/calls/answer",
+      "/api/devices/{id}/calls/hangup",
+      "/api/devices/{id}/calls/history"
+    ]
+  }
+}

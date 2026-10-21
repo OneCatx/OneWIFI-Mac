@@ -1,0 +1,37 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-GOLDEN-PATH",
+                  "notes":  "MAC-P3 read-only golden path: dashboard → devices → overview; shared device id"
+              },
+    "steps":  [
+                  {
+                      "expect_device_id":  "dev-ec25-01",
+                      "path":  "/api/dashboard/devices",
+                      "fixture":  "dashboard_devices_success.json",
+                      "order":  1
+                  },
+                  {
+                      "expect_device_id":  "dev-ec25-01",
+                      "path":  "/api/devices",
+                      "fixture":  "devices_list_success.json",
+                      "order":  2
+                  },
+                  {
+                      "expect_device_id":  "dev-ec25-01",
+                      "path":  "/api/devices/dev-ec25-01/overview",
+                      "fixture":  "device_overview_success.json",
+                      "order":  3
+                  }
+              ],
+    "forbidden":  [
+                      {
+                          "path":  "/api/devices/{id}",
+                          "reason":  "WEB 405; use overview",
+                          "method":  "GET"
+                      },
+                      {
+                          "path":  "/api/instances*",
+                          "reason":  "MDD legacy; Mac remote must not use"
+                      }
+                  ]
+}

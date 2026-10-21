@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-ANSWER-INVALID-CALL-ID",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/answer",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_call_id",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "answer requires non-empty id"
+  },
+  "request": {
+    "id": ""
+  },
+  "response": {
+    "error": {
+      "code": "invalid_call_id",
+      "message": "call id is required"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "id": "ISO-NO-MDD-PROXY-CERT",
+    "notes": "Mac remote PROXY+CERT must use gateway upstream/https paths; forbid MDD and local Mihomo surfaces",
+    "required_paths": [
+      "/api/upstream-proxies",
+      "/api/upstream-proxies/{id}",
+      "/api/upstream-proxies/{id}/actions/probe",
+      "/api/upstream-proxy-probe",
+      "/api/settings/https",
+      "/api/settings/https/certificate"
+    ],
+    "forbidden_paths": [
+      "/api/instances/{id}/proxy",
+      "/api/instances/{id}/upstream",
+      "/api/instances/{id}/https",
+      "/api/local-proxy",
+      "/api/proxy/nodes"
+    ]
+  }
+}

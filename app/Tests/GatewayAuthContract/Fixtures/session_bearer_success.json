@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "id": "FX-SESSION-BEARER-OK",
+    "method": "GET",
+    "path": "/api/auth/session",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log"
+    },
+    "notes": "Pure Bearer path: WEB MUST NOT return csrf_token (native poll must not rotate browser CSRF)"
+  },
+  "response": {
+    "data": {
+      "user": {
+        "username": "admin"
+      },
+      "session_token": "sess-fixture-token-do-not-log",
+      "expires_at": "2026-10-22T08:00:00Z",
+      "authenticated": true
+    }
+  }
+}

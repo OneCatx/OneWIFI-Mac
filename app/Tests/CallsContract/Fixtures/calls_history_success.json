@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "id": "FX-HISTORY-OK",
+    "method": "GET",
+    "path": "/api/devices/dev-ec25-01/calls/history",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "handleCallHistory; number_tail only; max 50"
+  },
+  "response": {
+    "data": {
+      "calls": [
+        {
+          "id": 9001,
+          "call_id": "cellular-fixture-01",
+          "number_tail": "0123",
+          "direction": "outbound",
+          "path": "cellular",
+          "state": "ended",
+          "started_at": "2026-10-21T10:00:00Z",
+          "ended_at": "2026-10-21T10:01:30Z",
+          "duration_seconds": 90
+        }
+      ]
+    }
+  }
+}

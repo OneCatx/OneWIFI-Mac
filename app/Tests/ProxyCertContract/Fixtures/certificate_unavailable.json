@@ -1,0 +1,20 @@
+{
+  "_meta": {
+    "id": "FX-CERT-UNAVAILABLE",
+    "method": "GET",
+    "path": "/api/settings/https/certificate",
+    "http_status": 500,
+    "auth_mode": "bearer",
+    "expected_code": "certificate_unavailable",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log"
+    },
+    "notes": "CertificatePEM failure"
+  },
+  "response": {
+    "error": {
+      "code": "certificate_unavailable",
+      "message": "certificate material unavailable"
+    }
+  }
+}

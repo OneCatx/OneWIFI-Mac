@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "id": "FX-DIAL-OK",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/dial",
+    "http_status": 202,
+    "auth_mode": "bearer",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "handleCallAction dial → HTTP 202 + Call object; control plane only"
+  },
+  "request": {
+    "number": "+447700900123"
+  },
+  "response": {
+    "data": {
+      "id": "cellular-fixture-01",
+      "number": "+447700900123",
+      "direction": "outbound",
+      "state": "dialing",
+      "started_at": "2026-10-21T10:00:00Z",
+      "ringback": "local"
+    }
+  }
+}

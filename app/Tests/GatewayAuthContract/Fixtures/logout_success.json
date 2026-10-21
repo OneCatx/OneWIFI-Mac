@@ -1,0 +1,18 @@
+{
+  "_meta": {
+    "id": "FX-LOGOUT-OK",
+    "method": "POST",
+    "path": "/api/auth/logout",
+    "http_status": 200,
+    "auth_mode": "bearer",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log"
+    },
+    "notes": "Bearer write → CSRF exempt; local token clear is authoritative on client"
+  },
+  "response": {
+    "data": {
+      "logged_out": true
+    }
+  }
+}

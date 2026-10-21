@@ -1,0 +1,18 @@
+﻿{
+    "_meta":  {
+                  "id":  "FX-DASHBOARD-EMPTY",
+                  "notes":  "No configured devices; empty array is valid",
+                  "auth_mode":  "bearer",
+                  "path":  "/api/dashboard/devices",
+                  "method":  "GET",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "http_status":  200
+              },
+    "response":  {
+                     "data":  [
+
+                              ]
+                 }
+}

@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_chinatelecom_usim_cn
+bundle: ChinaTelecom_USIM_cn.bundle
+supported_plmns:
+    - "20404"
+    - "46011"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 3121
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "119": urn:service:sos.fire
+            "120": urn:service:sos.ambulance
+            "122": urn:service:sos.marine
+            "999": urn:service:sos.mountain
+    entitlement:
+        entitlement_url: https://applecsb.crm.189.cn:8101/CRM-CSB/HttpAppleService
+    ims:
+        apn: ims
+        domain: ims.mnc011.mcc460.3gppnetwork.org
+        impi_format: imsi@carrierDomain
+        impu_format: imsi@carrierDomain
+        ip_stack: ipv4v6
+        media:
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            early_media_needs_header: true
+            require_preconditions_when_mandatory: false
+            require_qos_before_ringing: true
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

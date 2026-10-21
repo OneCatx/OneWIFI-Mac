@@ -1,0 +1,24 @@
+{
+  "_meta": {
+    "id": "FX-THREAD-INVALID-PEER",
+    "method": "GET",
+    "path": "/api/sms/thread",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_peer",
+    "query": {
+      "device_id": "dev-ec25-01"
+    },
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Accept": "application/json"
+    },
+    "notes": "peer query missing → invalid_peer; Mac must not open detail without peer"
+  },
+  "response": {
+    "error": {
+      "code": "invalid_peer",
+      "message": "SMS peer is required"
+    }
+  }
+}

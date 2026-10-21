@@ -1,0 +1,15 @@
+{
+  "_meta": {
+    "id": "ISO-LOCAL-MIHOMO-NE-UPSTREAM",
+    "notes": "Keep C1: local Mihomo Tab ≠ /api/upstream-proxies*; fixture documents semantic split",
+    "local_proxy_surface": {
+      "label": "本机 Mihomo / 前置代理",
+      "not_paths": ["/api/upstream-proxies", "/api/upstream-proxy-probe"]
+    },
+    "upstream_surface": {
+      "label": "网关上游代理",
+      "paths": ["/api/upstream-proxies", "/api/upstream-proxies/{id}/actions/probe"]
+    },
+    "assert": "MacRemote PROXY ticket must bind upstream_surface only"
+  }
+}

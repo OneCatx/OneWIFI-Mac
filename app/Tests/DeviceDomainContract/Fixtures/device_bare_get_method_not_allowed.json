@@ -1,0 +1,20 @@
+﻿{
+    "_meta":  {
+                  "http_status":  405,
+                  "expected_code":  "method_not_allowed",
+                  "method":  "GET",
+                  "id":  "FX-BARE-DEVICE-405",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices/dev-ec25-01",
+                  "notes":  "GET /api/devices/{id} forbidden; detail MUST use /overview"
+              },
+    "response":  {
+                     "error":  {
+                                   "code":  "method_not_allowed",
+                                   "message":  "method not allowed"
+                               }
+                 }
+}

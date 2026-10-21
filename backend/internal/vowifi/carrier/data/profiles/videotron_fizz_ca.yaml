@@ -1,0 +1,29 @@
+version: 3
+kind: carrier_bundle
+id: apple_videotron_fizz_ca
+bundle: Videotron_Fizz_ca.bundle
+supported_plmns:
+    - "302500"
+plmn_overrides:
+    "302500":
+        e911:
+            wifi_calling_without_entitlement: false
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                early_media_needs_header: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "414"
+                        - "499"
+                        - "606"
+                require_preconditions_when_mandatory: false
+            volte:
+                enable_volte_by_default: true

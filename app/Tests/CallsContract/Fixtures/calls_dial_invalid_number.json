@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "id": "FX-DIAL-INVALID-NUMBER",
+    "method": "POST",
+    "path": "/api/devices/dev-ec25-01/calls/dial",
+    "http_status": 400,
+    "auth_mode": "bearer",
+    "expected_code": "invalid_dial_number",
+    "device_id": "dev-ec25-01",
+    "request_headers": {
+      "Authorization": "Bearer sess-fixture-token-do-not-log",
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    "notes": "validDialNumber reject"
+  },
+  "request": {
+    "number": "x"
+  },
+  "response": {
+    "error": {
+      "code": "invalid_dial_number",
+      "message": "dial number is invalid"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "_meta":  {
+                  "http_status":  503,
+                  "expected_code":  "physical_device_missing",
+                  "method":  "GET",
+                  "id":  "FX-OVERVIEW-PHYS-MISSING",
+                  "request_headers":  {
+                                          "Authorization":  "Bearer sess-fixture-token-do-not-log"
+                                      },
+                  "auth_mode":  "bearer",
+                  "path":  "/api/devices/dev-ec25-01/overview",
+                  "notes":  "Configured but physical absent on some write paths; client must show error not empty success"
+              },
+    "response":  {
+                     "error":  {
+                                   "code":  "physical_device_missing",
+                                   "message":  "the configured physical device is missing"
+                               }
+                 }
+}

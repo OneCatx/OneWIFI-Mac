@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FC4497B6532A8D3B873EA3 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79249607F314B18D9F62EF87 /* AboutView.swift */; };
+		092AF24B7E32B21692445D59 /* SMSConversationViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72880F96CB22CC3B7D61EFB /* SMSConversationViews.swift */; };
+		0C22BAEA576427D9CBB9B9F9 /* CallRecentCallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F59FB547EF377D555FAB28 /* CallRecentCallsView.swift */; };
+		0CC4AB4805B43A9D6AC24047 /* LocalBackendAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0058FB866E6D72660FE92DA3 /* LocalBackendAuthentication.swift */; };
+		0CE987182806F8176177FD3C /* ReaderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B09632999920F556C79425B /* ReaderModels.swift */; };
+		0FA05ED97F0D987C9E0EFE92 /* SMSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B383518BEA5EEE5E3D61FF /* SMSModels.swift */; };
+		1058D08790CFC0069C7F98E0 /* ProletariusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D28AABE556A3F01501BC6 /* ProletariusApp.swift */; };
+		13F9801A0F3224C3BE2642F8 /* CallAudioStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972E2DB665F4BF8D93BB5FD /* CallAudioStore.swift */; };
+		14607FF3277433808370358D /* BluetoothReaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2C11169AACD79806E657E7 /* BluetoothReaderManager.swift */; };
+		15E4DD98FA2FF36FDA8AD602 /* MultiStandbyInboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DA2896129F20F03955B29F /* MultiStandbyInboxView.swift */; };
+		25B71391B4AA4F6A062C8A1A /* ModuleVoWiFiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE88D94B3A5F21D9B39BF10 /* ModuleVoWiFiStore.swift */; };
+		295370E70156B8A95E03DAE6 /* Ringtones in Resources */ = {isa = PBXBuildFile; fileRef = 0242CF383E163B39326C09DA /* Ringtones */; };
+		2C61423D0ABC2EE2CF697CAA /* CallHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3682557BF11F7CD874EA2C /* CallHistoryView.swift */; };
+		3051B577BBD7E6E62FF39A5A /* SMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCB1D6F1672CA93CBD55D90 /* SMSView.swift */; };
+		3071CCAC07F9283FCAEA81F2 /* CallModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91AC5094BF9A881229B7DBFE /* CallModels.swift */; };
+		311F282A8F3BA520B8D8A4D9 /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D05DC742A9D7D25EC835CD0 /* UpdateChecker.swift */; };
+		31F879F4635FBAA8C3980750 /* ReaderESIMNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E744300BEDF2173B7D3E5321 /* ReaderESIMNotificationsView.swift */; };
+		34B80C5145390A7F7EA19371 /* MenuBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60452FB47AF635F48454A999 /* MenuBarViews.swift */; };
+		372EF370303F700BADD36127 /* AttentionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C45D6294DCC8D072E43AB46 /* AttentionStore.swift */; };
+		3799F8A98462C66F31772C7E /* ESIMModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7514443E618C9D5812DACC7C /* ESIMModels.swift */; };
+		3DBDA57C9D287322582D7D93 /* MultiStandbyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497CC379C936E446CD5491A3 /* MultiStandbyStore.swift */; };
+		3E121C63294E1025924214DC /* CallRuntimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AFAE6F1780457B8F28F642 /* CallRuntimeStore.swift */; };
+		3FC7619C7214B7F0EDCB61EB /* ReaderVoWiFiAudioBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B5764F552956F6C6EE646 /* ReaderVoWiFiAudioBridge.swift */; };
+		4469539B2002E238D4CF0321 /* UnixSocketURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98CF7803074CC82FC752C8F /* UnixSocketURLProtocol.swift */; };
+		482B481F2007902E50F62097 /* CallKeypadViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7126345966D375FE0E55291 /* CallKeypadViews.swift */; };
+		4A2860DA8C2EB9DC6BEBADB0 /* AudioBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFF76BB2DDB426EC8E16DDB /* AudioBridge.swift */; };
+		4ABF0C05FCE48540E3B7FBEA /* WorkspaceViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D643DFA1608EA63D482902A /* WorkspaceViewport.swift */; };
+		5520AB8DD1E256570E683F6C /* ReaderDownloadESIMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBB8FB3CE90FCA0B8B2ED03 /* ReaderDownloadESIMView.swift */; };
+		55A392D9B3B591E35D0CB523 /* ReaderBLEBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B408F9E36AEB5C324A58DF9 /* ReaderBLEBridge.swift */; };
+		55C2CDC11D8C67A5C5F71060 /* ReaderESIMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEBFEC127CE13F0EF646DDC6 /* ReaderESIMStore.swift */; };
+		565C2FFB4D179D1398E2BAD1 /* BackendProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098EF72D66EE7EACD2DB13B9 /* BackendProcess.swift */; };
+		5B5691F47626561D71B487E2 /* AutoLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE2C57CD92D5BFF11E7C49C /* AutoLaunch.swift */; };
+		5F04E49AF325B56E98C8269C /* DeviceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A29BD7960E41A12D1675363 /* DeviceModels.swift */; };
+		5FFB896E93BF4AA36BF301C2 /* NetworkServicesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012C242E2BDB3B8F60D9E9EA /* NetworkServicesStore.swift */; };
+		6456531617C62EF559978D3B /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A08CD6841DE6686FD1E6A6E /* NetworkModels.swift */; };
+		64AD15F9F8F1375FF8282045 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C79019817D65DC5C4CF5A6 /* APIClient.swift */; };
+		6C1627E9241EE03F5F11B8B1 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEEDFEC4E974C28DFD1181F /* AppPreferences.swift */; };
+		6DEF0AF240CE7163991F57C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AF40C8E68C23D0EA00805C0 /* Assets.xcassets */; };
+		6E02B9D408A451F78419AA5C /* CallHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169648BA3EDC372306B45616 /* CallHistoryStore.swift */; };
+		74892CB9809CD7812527FCAF /* DeviceSnapshotStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246B6CA012A5CFF0DEEA437C /* DeviceSnapshotStore.swift */; };
+		7B68B5BAC0995D0324312618 /* AppSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34B8ABC74D76FB4DE6392F9 /* AppSection.swift */; };
+		8DD0E80D73EE8E1B44768E92 /* HomeSupportViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C375CE0CE07DF6BA56A0D3 /* HomeSupportViews.swift */; };
+		9101238469919DBB90E877C3 /* MenuBarStatusSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738304A0AB1795A4B20D7638 /* MenuBarStatusSnapshot.swift */; };
+		92DB03A95961984EFAE19FE6 /* ReaderRenameProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55F8EDE25FF204D25F4B91 /* ReaderRenameProfileView.swift */; };
+		96AD0DCABF6FFED14C763DD5 /* UnifiedStateRevision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256751E0E901F30AAD72EE8 /* UnifiedStateRevision.swift */; };
+		977791FF6397486A769ED6CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E43D18F35EF52924B67A11 /* ContentView.swift */; };
+		9814CB677FFE954AD8FDC940 /* GlassComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21A5AD10CE0BF427F865907 /* GlassComponents.swift */; };
+		9BA48DC731DA0735AA9FBA69 /* ESIMQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10EEADBB8133A33BD9093E0 /* ESIMQRCode.swift */; };
+		9DD96F85C94994F592038F62 /* IncomingCallCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19837C11A46CE5E24339A458 /* IncomingCallCard.swift */; };
+		9EF5B488FDA0DA82587E7D45 /* ReaderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF288656D3DC9AE774E7564A /* ReaderCardView.swift */; };
+		A55DED59BC9CF66899ACEC9C /* Ringtone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B92019B741382AB38D32A2 /* Ringtone.swift */; };
+		AF4AB5614DC902DCAD121055 /* CallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60422194D88A577BF1E3301A /* CallView.swift */; };
+		B0831CF6F838D5F6BD83C94F /* ModuleESIMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F864E18D5D42C9E7625065C3 /* ModuleESIMView.swift */; };
+		B603F6F40A462B6D78EC63CC /* CallLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E676EE41D39B673926891DC4 /* CallLayoutSupport.swift */; };
+		B72DCA39303C4A4870EE5571 /* DashboardStore+Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B7B41DAE6BBD90DDF7A100 /* DashboardStore+Call.swift */; };
+		BE5E9865594311D68B8E9CA2 /* BLEPhaseDeadline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B95C8DC3D4CF27749BE0132 /* BLEPhaseDeadline.swift */; };
+		C63F62F6A2EF646F3455E210 /* ToastItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0BB0430E93774C437EE0BF /* ToastItem.swift */; };
+		C974E5F97EDDB9403B39A272 /* ModuleESIMStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EE9469AB27734547A8E622 /* ModuleESIMStore.swift */; };
+		CD58A06058398B41E227D6FD /* ReaderRuntimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403DC3C2E3544A5C07AA4D6D /* ReaderRuntimeStore.swift */; };
+		D2B6E4B5C9C2843ABC78EDA1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170516B2AABE9FFC25BC5824 /* SettingsView.swift */; };
+		8E3C7A19D5B2406F9C1E8A2B /* GatewaySettingsPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A91C2E8B7D3065E1A09274 /* GatewaySettingsPlaceholderView.swift */; };
+		D1A2B3D4E5F60718293A4B01 /* BaseUrlPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B01 /* BaseUrlPolicy.swift */; };
+		D1A2B3D4E5F60718293A4B02 /* GatewayOriginStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B02 /* GatewayOriginStore.swift */; };
+		D1A2B3D4E5F60718293A4B03 /* GatewayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B03 /* GatewayAPI.swift */; };
+		D1A2B3D4E5F60718293A4B04 /* GatewayHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B04 /* GatewayHTTPClient.swift */; };
+		D1A2B3D4E5F60718293A4B05 /* GatewayKeychainTokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B05 /* GatewayKeychainTokenStore.swift */; };
+		D1A2B3D4E5F60718293A4B06 /* GatewaySessionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B06 /* GatewaySessionModels.swift */; };
+		D1A2B3D4E5F60718293A4B07 /* GatewaySessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B07 /* GatewaySessionStore.swift */; };
+		D1A2B3D4E5F60718293A4B51 /* GatewayTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B51 /* GatewayTrustPolicy.swift */; };
+		D1A2B3D4E5F60718293A4B11 /* RemoteDashboardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B11 /* RemoteDashboardModels.swift */; };
+		D1A2B3D4E5F60718293A4B12 /* RemoteDashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B12 /* RemoteDashboardStore.swift */; };
+		D1A2B3D4E5F60718293A4B13 /* RemoteDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B13 /* RemoteDashboardView.swift */; };
+		D1A2B3D4E5F60718293A4B14 /* RemoteDeviceOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B14 /* RemoteDeviceOverviewView.swift */; };
+		D1A2B3D4E5F60718293A4B21 /* RemoteSMSModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B21 /* RemoteSMSModels.swift */; };
+		D1A2B3D4E5F60718293A4B22 /* RemoteSMSStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B22 /* RemoteSMSStore.swift */; };
+		D1A2B3D4E5F60718293A4B23 /* RemoteSMSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B23 /* RemoteSMSView.swift */; };
+		D1A2B3D4E5F60718293A4B31 /* RemoteUpstreamModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B31 /* RemoteUpstreamModels.swift */; };
+		D1A2B3D4E5F60718293A4B32 /* RemoteUpstreamStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B32 /* RemoteUpstreamStore.swift */; };
+		D1A2B3D4E5F60718293A4B33 /* RemoteUpstreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B33 /* RemoteUpstreamView.swift */; };
+		D1A2B3D4E5F60718293A4B41 /* RemoteCertificateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B41 /* RemoteCertificateModels.swift */; };
+		D1A2B3D4E5F60718293A4B42 /* RemoteCertificateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B42 /* RemoteCertificateStore.swift */; };
+		D1A2B3D4E5F60718293A4B43 /* RemoteCertificateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B43 /* RemoteCertificateView.swift */; };
+		D1A2B3D4E5F60718293A4B61 /* RemoteCallsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B61 /* RemoteCallsModels.swift */; };
+		D1A2B3D4E5F60718293A4B62 /* RemoteCallsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B62 /* RemoteCallsStore.swift */; };
+		D1A2B3D4E5F60718293A4B63 /* RemoteCallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2B3D4E5F60718293A4B63 /* RemoteCallsView.swift */; };
+
+		A1B2C3D4E5F60718293A4B5C /* RemoteWorkspacePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C3D4E5F60718293A4B5C6D /* RemoteWorkspacePlaceholderView.swift */; };
+		D3AE938C8C55C34FD8DBABBA /* CallModeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36DE03DF82A85377A6805FBC /* CallModeStore.swift */; };
+		D88E33F5EB27885D63906C57 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BE8439E8A3DAFD7F136D20 /* DiagnosticsView.swift */; };
+		DB604E86CBFDF0258C97EA58 /* CarrierDisplayMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EAEAB87016301697410D6D /* CarrierDisplayMetadata.swift */; };
+		E08A35382FA611957FAE8927 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41911272E76D65B344CB0C3E /* ActivityView.swift */; };
+		E2170612724DE2B10D9E2756 /* MultiStandbyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9837AA17390E54A21681FDD /* MultiStandbyModels.swift */; };
+		E431110D1C65B856D7DD7117 /* MainWindowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF7A92D1A92E45E67F17F78 /* MainWindowCoordinator.swift */; };
+		E6BDC841A164585671796D32 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = E93C7F22C0370D4240C81A65 /* AppIcon.icon */; };
+		E7D665ECC96C9E0790F34D75 /* DashboardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB80934C464CC6C998FD84D /* DashboardStore.swift */; };
+		EA7D01C14968797E4B6D0BEA /* DashboardStore+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDC67916E22F414EEBD94A5 /* DashboardStore+Network.swift */; };
+		ED4AA3AEFD6F61CDF8DF8E3C /* ModuleNetworkStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF32D22D4ED5F1B749290AD /* ModuleNetworkStore.swift */; };
+		ED9F0AF33E9926AAC7A90FD3 /* DashboardStore+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B16D3503CF73F512FF17166 /* DashboardStore+Module.swift */; };
+		F7E9FDE76F52FFEB45FC8187 /* SMSStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC73D8994EF3201504D1AE8 /* SMSStore.swift */; };
+		F935DF918216FD34906ADEB0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB24DD9702232B93BD9F017 /* HomeView.swift */; };
+		FA5C876CD38DA119393BE229 /* MultiStandbyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E302F150D5D40BCE8D1D7 /* MultiStandbyView.swift */; };
+		FB40FE79DA7868259AD94DF7 /* DashboardStore+Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C356EE14A709068952CD1D /* DashboardStore+Reader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0058FB866E6D72660FE92DA3 /* LocalBackendAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBackendAuthentication.swift; sourceTree = "<group>"; };
+		012C242E2BDB3B8F60D9E9EA /* NetworkServicesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServicesStore.swift; sourceTree = "<group>"; };
+		0242CF383E163B39326C09DA /* Ringtones */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Ringtones; path = app/Resources/Ringtones; sourceTree = SOURCE_ROOT; };
+		05B92019B741382AB38D32A2 /* Ringtone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ringtone.swift; sourceTree = "<group>"; };
+		098EF72D66EE7EACD2DB13B9 /* BackendProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendProcess.swift; sourceTree = "<group>"; };
+		0B95C8DC3D4CF27749BE0132 /* BLEPhaseDeadline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEPhaseDeadline.swift; sourceTree = "<group>"; };
+		0CBB8FB3CE90FCA0B8B2ED03 /* ReaderDownloadESIMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDownloadESIMView.swift; sourceTree = "<group>"; };
+		107D28AABE556A3F01501BC6 /* ProletariusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProletariusApp.swift; sourceTree = "<group>"; };
+		10AFAE6F1780457B8F28F642 /* CallRuntimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRuntimeStore.swift; sourceTree = "<group>"; };
+		13E43D18F35EF52924B67A11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		169648BA3EDC372306B45616 /* CallHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryStore.swift; sourceTree = "<group>"; };
+		170516B2AABE9FFC25BC5824 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F4A91C2E8B7D3065E1A09274 /* GatewaySettingsPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewaySettingsPlaceholderView.swift; sourceTree = "<group>"; };
+		B2C3D4E5F60718293A4B5C6D /* RemoteWorkspacePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWorkspacePlaceholderView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B01 /* BaseUrlPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrlPolicy.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B02 /* GatewayOriginStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayOriginStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B03 /* GatewayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayAPI.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B04 /* GatewayHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayHTTPClient.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B05 /* GatewayKeychainTokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayKeychainTokenStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B06 /* GatewaySessionModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewaySessionModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B07 /* GatewaySessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewaySessionStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B51 /* GatewayTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayTrustPolicy.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B11 /* RemoteDashboardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDashboardModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B12 /* RemoteDashboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDashboardStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B13 /* RemoteDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDashboardView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B14 /* RemoteDeviceOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDeviceOverviewView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B21 /* RemoteSMSModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSMSModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B22 /* RemoteSMSStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSMSStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B23 /* RemoteSMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSMSView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B31 /* RemoteUpstreamModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpstreamModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B32 /* RemoteUpstreamStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpstreamStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B33 /* RemoteUpstreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteUpstreamView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B41 /* RemoteCertificateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCertificateModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B42 /* RemoteCertificateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCertificateStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B43 /* RemoteCertificateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCertificateView.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B61 /* RemoteCallsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallsModels.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B62 /* RemoteCallsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallsStore.swift; sourceTree = "<group>"; };
+		C1A2B3D4E5F60718293A4B63 /* RemoteCallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCallsView.swift; sourceTree = "<group>"; };
+		1972E2DB665F4BF8D93BB5FD /* CallAudioStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAudioStore.swift; sourceTree = "<group>"; };
+		19837C11A46CE5E24339A458 /* IncomingCallCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingCallCard.swift; sourceTree = "<group>"; };
+		246B6CA012A5CFF0DEEA437C /* DeviceSnapshotStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSnapshotStore.swift; sourceTree = "<group>"; };
+		24DA2896129F20F03955B29F /* MultiStandbyInboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStandbyInboxView.swift; sourceTree = "<group>"; };
+		29C356EE14A709068952CD1D /* DashboardStore+Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStore+Reader.swift"; sourceTree = "<group>"; };
+		2D643DFA1608EA63D482902A /* WorkspaceViewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkspaceViewport.swift; sourceTree = "<group>"; };
+		36DE03DF82A85377A6805FBC /* CallModeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModeStore.swift; sourceTree = "<group>"; };
+		403DC3C2E3544A5C07AA4D6D /* ReaderRuntimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderRuntimeStore.swift; sourceTree = "<group>"; };
+		41911272E76D65B344CB0C3E /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		420B5764F552956F6C6EE646 /* ReaderVoWiFiAudioBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderVoWiFiAudioBridge.swift; sourceTree = "<group>"; };
+		497CC379C936E446CD5491A3 /* MultiStandbyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStandbyStore.swift; sourceTree = "<group>"; };
+		4A08CD6841DE6686FD1E6A6E /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
+		5256751E0E901F30AAD72EE8 /* UnifiedStateRevision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedStateRevision.swift; sourceTree = "<group>"; };
+		5B16D3503CF73F512FF17166 /* DashboardStore+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStore+Module.swift"; sourceTree = "<group>"; };
+		5CDC67916E22F414EEBD94A5 /* DashboardStore+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStore+Network.swift"; sourceTree = "<group>"; };
+		60422194D88A577BF1E3301A /* CallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallView.swift; sourceTree = "<group>"; };
+		60452FB47AF635F48454A999 /* MenuBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViews.swift; sourceTree = "<group>"; };
+		65EAEAB87016301697410D6D /* CarrierDisplayMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierDisplayMetadata.swift; sourceTree = "<group>"; };
+		6BE88D94B3A5F21D9B39BF10 /* ModuleVoWiFiStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleVoWiFiStore.swift; sourceTree = "<group>"; };
+		6C45D6294DCC8D072E43AB46 /* AttentionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentionStore.swift; sourceTree = "<group>"; };
+		6E3682557BF11F7CD874EA2C /* CallHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallHistoryView.swift; sourceTree = "<group>"; };
+		738304A0AB1795A4B20D7638 /* MenuBarStatusSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarStatusSnapshot.swift; sourceTree = "<group>"; };
+		7514443E618C9D5812DACC7C /* ESIMModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESIMModels.swift; sourceTree = "<group>"; };
+		79249607F314B18D9F62EF87 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		7AF40C8E68C23D0EA00805C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B408F9E36AEB5C324A58DF9 /* ReaderBLEBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderBLEBridge.swift; sourceTree = "<group>"; };
+		7FB24DD9702232B93BD9F017 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7FF32D22D4ED5F1B749290AD /* ModuleNetworkStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleNetworkStore.swift; sourceTree = "<group>"; };
+		802E302F150D5D40BCE8D1D7 /* MultiStandbyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStandbyView.swift; sourceTree = "<group>"; };
+		8A29BD7960E41A12D1675363 /* DeviceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModels.swift; sourceTree = "<group>"; };
+		8B09632999920F556C79425B /* ReaderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderModels.swift; sourceTree = "<group>"; };
+		8B0BB0430E93774C437EE0BF /* ToastItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastItem.swift; sourceTree = "<group>"; };
+		8E55F8EDE25FF204D25F4B91 /* ReaderRenameProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderRenameProfileView.swift; sourceTree = "<group>"; };
+		91AC5094BF9A881229B7DBFE /* CallModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModels.swift; sourceTree = "<group>"; };
+		97B383518BEA5EEE5E3D61FF /* SMSModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSModels.swift; sourceTree = "<group>"; };
+		9A2C11169AACD79806E657E7 /* BluetoothReaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothReaderManager.swift; sourceTree = "<group>"; };
+		9AF7A92D1A92E45E67F17F78 /* MainWindowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowCoordinator.swift; sourceTree = "<group>"; };
+		9CC73D8994EF3201504D1AE8 /* SMSStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSStore.swift; sourceTree = "<group>"; };
+		9D05DC742A9D7D25EC835CD0 /* UpdateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateChecker.swift; sourceTree = "<group>"; };
+		9DFF76BB2DDB426EC8E16DDB /* AudioBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBridge.swift; sourceTree = "<group>"; };
+		A6BE8439E8A3DAFD7F136D20 /* DiagnosticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsView.swift; sourceTree = "<group>"; };
+		B1F59FB547EF377D555FAB28 /* CallRecentCallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallRecentCallsView.swift; sourceTree = "<group>"; };
+		B5C375CE0CE07DF6BA56A0D3 /* HomeSupportViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSupportViews.swift; sourceTree = "<group>"; };
+		B9837AA17390E54A21681FDD /* MultiStandbyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiStandbyModels.swift; sourceTree = "<group>"; };
+		C34B8ABC74D76FB4DE6392F9 /* AppSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSection.swift; sourceTree = "<group>"; };
+		C72880F96CB22CC3B7D61EFB /* SMSConversationViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSConversationViews.swift; sourceTree = "<group>"; };
+		C98CF7803074CC82FC752C8F /* UnixSocketURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnixSocketURLProtocol.swift; sourceTree = "<group>"; };
+		CDB80934C464CC6C998FD84D /* DashboardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardStore.swift; sourceTree = "<group>"; };
+		D7126345966D375FE0E55291 /* CallKeypadViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallKeypadViews.swift; sourceTree = "<group>"; };
+		D7A080B4E6778888AE4E2CCB /* Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneWIFI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEEDFEC4E974C28DFD1181F /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		DF288656D3DC9AE774E7564A /* ReaderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderCardView.swift; sourceTree = "<group>"; };
+		DFE2C57CD92D5BFF11E7C49C /* AutoLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLaunch.swift; sourceTree = "<group>"; };
+		E10EEADBB8133A33BD9093E0 /* ESIMQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESIMQRCode.swift; sourceTree = "<group>"; };
+		E21A5AD10CE0BF427F865907 /* GlassComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassComponents.swift; sourceTree = "<group>"; };
+		E676EE41D39B673926891DC4 /* CallLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallLayoutSupport.swift; sourceTree = "<group>"; };
+		E6C79019817D65DC5C4CF5A6 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E744300BEDF2173B7D3E5321 /* ReaderESIMNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderESIMNotificationsView.swift; sourceTree = "<group>"; };
+		E93C7F22C0370D4240C81A65 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		E9EE9469AB27734547A8E622 /* ModuleESIMStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleESIMStore.swift; sourceTree = "<group>"; };
+		EDCB1D6F1672CA93CBD55D90 /* SMSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMSView.swift; sourceTree = "<group>"; };
+		F864E18D5D42C9E7625065C3 /* ModuleESIMView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleESIMView.swift; sourceTree = "<group>"; };
+		F9B7B41DAE6BBD90DDF7A100 /* DashboardStore+Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardStore+Call.swift"; sourceTree = "<group>"; };
+		FEBFEC127CE13F0EF646DDC6 /* ReaderESIMStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderESIMStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4C0F3F10AD207719C4E19BD9 = {
+			isa = PBXGroup;
+			children = (
+				BA811FFD8D454D2E2F633316 /* app */,
+				CB83082B7954AB98D3B92163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61CB5E99FA5FBCF5E66D7029 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79249607F314B18D9F62EF87 /* AboutView.swift */,
+				41911272E76D65B344CB0C3E /* ActivityView.swift */,
+				C34B8ABC74D76FB4DE6392F9 /* AppSection.swift */,
+				6E3682557BF11F7CD874EA2C /* CallHistoryView.swift */,
+				D7126345966D375FE0E55291 /* CallKeypadViews.swift */,
+				E676EE41D39B673926891DC4 /* CallLayoutSupport.swift */,
+				B1F59FB547EF377D555FAB28 /* CallRecentCallsView.swift */,
+				60422194D88A577BF1E3301A /* CallView.swift */,
+				13E43D18F35EF52924B67A11 /* ContentView.swift */,
+				A6BE8439E8A3DAFD7F136D20 /* DiagnosticsView.swift */,
+				E21A5AD10CE0BF427F865907 /* GlassComponents.swift */,
+				B5C375CE0CE07DF6BA56A0D3 /* HomeSupportViews.swift */,
+				7FB24DD9702232B93BD9F017 /* HomeView.swift */,
+				F864E18D5D42C9E7625065C3 /* ModuleESIMView.swift */,
+				24DA2896129F20F03955B29F /* MultiStandbyInboxView.swift */,
+				802E302F150D5D40BCE8D1D7 /* MultiStandbyView.swift */,
+				DF288656D3DC9AE774E7564A /* ReaderCardView.swift */,
+				0CBB8FB3CE90FCA0B8B2ED03 /* ReaderDownloadESIMView.swift */,
+				E744300BEDF2173B7D3E5321 /* ReaderESIMNotificationsView.swift */,
+				8E55F8EDE25FF204D25F4B91 /* ReaderRenameProfileView.swift */,
+				F4A91C2E8B7D3065E1A09274 /* GatewaySettingsPlaceholderView.swift */,
+				C1A2B3D4E5F60718293A4B13 /* RemoteDashboardView.swift */,
+				C1A2B3D4E5F60718293A4B14 /* RemoteDeviceOverviewView.swift */,
+				C1A2B3D4E5F60718293A4B23 /* RemoteSMSView.swift */,
+				C1A2B3D4E5F60718293A4B63 /* RemoteCallsView.swift */,
+				C1A2B3D4E5F60718293A4B33 /* RemoteUpstreamView.swift */,
+				C1A2B3D4E5F60718293A4B43 /* RemoteCertificateView.swift */,
+				B2C3D4E5F60718293A4B5C6D /* RemoteWorkspacePlaceholderView.swift */,
+				170516B2AABE9FFC25BC5824 /* SettingsView.swift */,
+				C72880F96CB22CC3B7D61EFB /* SMSConversationViews.swift */,
+				EDCB1D6F1672CA93CBD55D90 /* SMSView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D48A802A675FE102489873B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E6C79019817D65DC5C4CF5A6 /* APIClient.swift */,
+				DBEEDFEC4E974C28DFD1181F /* AppPreferences.swift */,
+				C1A2B3D4E5F60718293A4B01 /* BaseUrlPolicy.swift */,
+				C1A2B3D4E5F60718293A4B03 /* GatewayAPI.swift */,
+				C1A2B3D4E5F60718293A4B04 /* GatewayHTTPClient.swift */,
+				C1A2B3D4E5F60718293A4B05 /* GatewayKeychainTokenStore.swift */,
+				C1A2B3D4E5F60718293A4B02 /* GatewayOriginStore.swift */,
+				C1A2B3D4E5F60718293A4B06 /* GatewaySessionModels.swift */,
+				C1A2B3D4E5F60718293A4B07 /* GatewaySessionStore.swift */,
+				C1A2B3D4E5F60718293A4B51 /* GatewayTrustPolicy.swift */,
+				C1A2B3D4E5F60718293A4B11 /* RemoteDashboardModels.swift */,
+				C1A2B3D4E5F60718293A4B12 /* RemoteDashboardStore.swift */,
+				C1A2B3D4E5F60718293A4B21 /* RemoteSMSModels.swift */,
+				C1A2B3D4E5F60718293A4B22 /* RemoteSMSStore.swift */,
+				C1A2B3D4E5F60718293A4B61 /* RemoteCallsModels.swift */,
+				C1A2B3D4E5F60718293A4B62 /* RemoteCallsStore.swift */,
+				C1A2B3D4E5F60718293A4B31 /* RemoteUpstreamModels.swift */,
+				C1A2B3D4E5F60718293A4B32 /* RemoteUpstreamStore.swift */,
+				C1A2B3D4E5F60718293A4B41 /* RemoteCertificateModels.swift */,
+				C1A2B3D4E5F60718293A4B42 /* RemoteCertificateStore.swift */,
+				6C45D6294DCC8D072E43AB46 /* AttentionStore.swift */,
+				9DFF76BB2DDB426EC8E16DDB /* AudioBridge.swift */,
+				DFE2C57CD92D5BFF11E7C49C /* AutoLaunch.swift */,
+				098EF72D66EE7EACD2DB13B9 /* BackendProcess.swift */,
+				0B95C8DC3D4CF27749BE0132 /* BLEPhaseDeadline.swift */,
+				9A2C11169AACD79806E657E7 /* BluetoothReaderManager.swift */,
+				1972E2DB665F4BF8D93BB5FD /* CallAudioStore.swift */,
+				169648BA3EDC372306B45616 /* CallHistoryStore.swift */,
+				91AC5094BF9A881229B7DBFE /* CallModels.swift */,
+				36DE03DF82A85377A6805FBC /* CallModeStore.swift */,
+				10AFAE6F1780457B8F28F642 /* CallRuntimeStore.swift */,
+				65EAEAB87016301697410D6D /* CarrierDisplayMetadata.swift */,
+				CDB80934C464CC6C998FD84D /* DashboardStore.swift */,
+				F9B7B41DAE6BBD90DDF7A100 /* DashboardStore+Call.swift */,
+				5B16D3503CF73F512FF17166 /* DashboardStore+Module.swift */,
+				5CDC67916E22F414EEBD94A5 /* DashboardStore+Network.swift */,
+				29C356EE14A709068952CD1D /* DashboardStore+Reader.swift */,
+				8A29BD7960E41A12D1675363 /* DeviceModels.swift */,
+				246B6CA012A5CFF0DEEA437C /* DeviceSnapshotStore.swift */,
+				7514443E618C9D5812DACC7C /* ESIMModels.swift */,
+				E10EEADBB8133A33BD9093E0 /* ESIMQRCode.swift */,
+				19837C11A46CE5E24339A458 /* IncomingCallCard.swift */,
+				0058FB866E6D72660FE92DA3 /* LocalBackendAuthentication.swift */,
+				9AF7A92D1A92E45E67F17F78 /* MainWindowCoordinator.swift */,
+				738304A0AB1795A4B20D7638 /* MenuBarStatusSnapshot.swift */,
+				60452FB47AF635F48454A999 /* MenuBarViews.swift */,
+				E9EE9469AB27734547A8E622 /* ModuleESIMStore.swift */,
+				7FF32D22D4ED5F1B749290AD /* ModuleNetworkStore.swift */,
+				6BE88D94B3A5F21D9B39BF10 /* ModuleVoWiFiStore.swift */,
+				B9837AA17390E54A21681FDD /* MultiStandbyModels.swift */,
+				497CC379C936E446CD5491A3 /* MultiStandbyStore.swift */,
+				4A08CD6841DE6686FD1E6A6E /* NetworkModels.swift */,
+				012C242E2BDB3B8F60D9E9EA /* NetworkServicesStore.swift */,
+				107D28AABE556A3F01501BC6 /* ProletariusApp.swift */,
+				7B408F9E36AEB5C324A58DF9 /* ReaderBLEBridge.swift */,
+				FEBFEC127CE13F0EF646DDC6 /* ReaderESIMStore.swift */,
+				8B09632999920F556C79425B /* ReaderModels.swift */,
+				403DC3C2E3544A5C07AA4D6D /* ReaderRuntimeStore.swift */,
+				420B5764F552956F6C6EE646 /* ReaderVoWiFiAudioBridge.swift */,
+				05B92019B741382AB38D32A2 /* Ringtone.swift */,
+				97B383518BEA5EEE5E3D61FF /* SMSModels.swift */,
+				9CC73D8994EF3201504D1AE8 /* SMSStore.swift */,
+				8B0BB0430E93774C437EE0BF /* ToastItem.swift */,
+				5256751E0E901F30AAD72EE8 /* UnifiedStateRevision.swift */,
+				C98CF7803074CC82FC752C8F /* UnixSocketURLProtocol.swift */,
+				9D05DC742A9D7D25EC835CD0 /* UpdateChecker.swift */,
+				2D643DFA1608EA63D482902A /* WorkspaceViewport.swift */,
+				61CB5E99FA5FBCF5E66D7029 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8192E37A9505741C7ED7EF4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AF40C8E68C23D0EA00805C0 /* Assets.xcassets */,
+				0242CF383E163B39326C09DA /* Ringtones */,
+				C8AB2D48EF6ACDD63A54D9B9 /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA811FFD8D454D2E2F633316 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				8192E37A9505741C7ED7EF4E /* Resources */,
+				7D48A802A675FE102489873B /* Sources */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		C8AB2D48EF6ACDD63A54D9B9 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				E93C7F22C0370D4240C81A65 /* AppIcon.icon */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		CB83082B7954AB98D3B92163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7A080B4E6778888AE4E2CCB /* Switch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10CF59D4CE3A0CF5A9F27436 /* Switch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B109DB5A67B356CF6E093C /* Build configuration list for PBXNativeTarget "Switch" */;
+			buildPhases = (
+				62520F867CEB7596C5EA90C0 /* Sources */,
+				1EDABACCB8034D7AC5DD9EDD /* Resources */,
+				EA75F9E97F743B6D1A03363C /* 閺嬪嫬缂撻獮璺虹サ閸?Go 娑?Rust 鏉╀胶些閸氬海顏?*/,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Switch;
+			packageProductDependencies = (
+			);
+			productName = Switch;
+			productReference = D7A080B4E6778888AE4E2CCB /* Switch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		017E60C3487F457039AB814C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					10CF59D4CE3A0CF5A9F27436 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 81CE9AE7B34CA13CAC83A50B /* Build configuration list for PBXProject "Switch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4C0F3F10AD207719C4E19BD9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CB83082B7954AB98D3B92163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10CF59D4CE3A0CF5A9F27436 /* Switch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EDABACCB8034D7AC5DD9EDD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6BDC841A164585671796D32 /* AppIcon.icon in Resources */,
+				6DEF0AF240CE7163991F57C1 /* Assets.xcassets in Resources */,
+				295370E70156B8A95E03DAE6 /* Ringtones in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA75F9E97F743B6D1A03363C /* 閺嬪嫬缂撻獮璺虹サ閸?Go 娑?Rust 鏉╀胶些閸氬海顏?*/ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "閺嬪嫬缂撻獮璺虹サ閸?Go 娑?Rust 鏉╀胶些閸氬海顏?;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/scripts/build-backends.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62520F867CEB7596C5EA90C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AD15F9F8F1375FF8282045 /* APIClient.swift in Sources */,
+				07FC4497B6532A8D3B873EA3 /* AboutView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B01 /* BaseUrlPolicy.swift in Sources */,
+				D1A2B3D4E5F60718293A4B03 /* GatewayAPI.swift in Sources */,
+				D1A2B3D4E5F60718293A4B04 /* GatewayHTTPClient.swift in Sources */,
+				D1A2B3D4E5F60718293A4B05 /* GatewayKeychainTokenStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B02 /* GatewayOriginStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B06 /* GatewaySessionModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B07 /* GatewaySessionStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B51 /* GatewayTrustPolicy.swift in Sources */,
+				D1A2B3D4E5F60718293A4B11 /* RemoteDashboardModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B12 /* RemoteDashboardStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B13 /* RemoteDashboardView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B14 /* RemoteDeviceOverviewView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B21 /* RemoteSMSModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B22 /* RemoteSMSStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B23 /* RemoteSMSView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B61 /* RemoteCallsModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B62 /* RemoteCallsStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B63 /* RemoteCallsView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B31 /* RemoteUpstreamModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B32 /* RemoteUpstreamStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B33 /* RemoteUpstreamView.swift in Sources */,
+				D1A2B3D4E5F60718293A4B41 /* RemoteCertificateModels.swift in Sources */,
+				D1A2B3D4E5F60718293A4B42 /* RemoteCertificateStore.swift in Sources */,
+				D1A2B3D4E5F60718293A4B43 /* RemoteCertificateView.swift in Sources */,
+				E08A35382FA611957FAE8927 /* ActivityView.swift in Sources */,
+				6C1627E9241EE03F5F11B8B1 /* AppPreferences.swift in Sources */,
+				7B68B5BAC0995D0324312618 /* AppSection.swift in Sources */,
+				372EF370303F700BADD36127 /* AttentionStore.swift in Sources */,
+				4A2860DA8C2EB9DC6BEBADB0 /* AudioBridge.swift in Sources */,
+				5B5691F47626561D71B487E2 /* AutoLaunch.swift in Sources */,
+				BE5E9865594311D68B8E9CA2 /* BLEPhaseDeadline.swift in Sources */,
+				565C2FFB4D179D1398E2BAD1 /* BackendProcess.swift in Sources */,
+				14607FF3277433808370358D /* BluetoothReaderManager.swift in Sources */,
+				13F9801A0F3224C3BE2642F8 /* CallAudioStore.swift in Sources */,
+				6E02B9D408A451F78419AA5C /* CallHistoryStore.swift in Sources */,
+				2C61423D0ABC2EE2CF697CAA /* CallHistoryView.swift in Sources */,
+				482B481F2007902E50F62097 /* CallKeypadViews.swift in Sources */,
+				B603F6F40A462B6D78EC63CC /* CallLayoutSupport.swift in Sources */,
+				D3AE938C8C55C34FD8DBABBA /* CallModeStore.swift in Sources */,
+				3071CCAC07F9283FCAEA81F2 /* CallModels.swift in Sources */,
+				0C22BAEA576427D9CBB9B9F9 /* CallRecentCallsView.swift in Sources */,
+				3E121C63294E1025924214DC /* CallRuntimeStore.swift in Sources */,
+				AF4AB5614DC902DCAD121055 /* CallView.swift in Sources */,
+				DB604E86CBFDF0258C97EA58 /* CarrierDisplayMetadata.swift in Sources */,
+				977791FF6397486A769ED6CD /* ContentView.swift in Sources */,
+				B72DCA39303C4A4870EE5571 /* DashboardStore+Call.swift in Sources */,
+				ED9F0AF33E9926AAC7A90FD3 /* DashboardStore+Module.swift in Sources */,
+				EA7D01C14968797E4B6D0BEA /* DashboardStore+Network.swift in Sources */,
+				FB40FE79DA7868259AD94DF7 /* DashboardStore+Reader.swift in Sources */,
+				E7D665ECC96C9E0790F34D75 /* DashboardStore.swift in Sources */,
+				5F04E49AF325B56E98C8269C /* DeviceModels.swift in Sources */,
+				74892CB9809CD7812527FCAF /* DeviceSnapshotStore.swift in Sources */,
+				D88E33F5EB27885D63906C57 /* DiagnosticsView.swift in Sources */,
+				3799F8A98462C66F31772C7E /* ESIMModels.swift in Sources */,
+				9BA48DC731DA0735AA9FBA69 /* ESIMQRCode.swift in Sources */,
+				9814CB677FFE954AD8FDC940 /* GlassComponents.swift in Sources */,
+				8DD0E80D73EE8E1B44768E92 /* HomeSupportViews.swift in Sources */,
+				F935DF918216FD34906ADEB0 /* HomeView.swift in Sources */,
+				9DD96F85C94994F592038F62 /* IncomingCallCard.swift in Sources */,
+				0CC4AB4805B43A9D6AC24047 /* LocalBackendAuthentication.swift in Sources */,
+				E431110D1C65B856D7DD7117 /* MainWindowCoordinator.swift in Sources */,
+				9101238469919DBB90E877C3 /* MenuBarStatusSnapshot.swift in Sources */,
+				34B80C5145390A7F7EA19371 /* MenuBarViews.swift in Sources */,
+				C974E5F97EDDB9403B39A272 /* ModuleESIMStore.swift in Sources */,
+				B0831CF6F838D5F6BD83C94F /* ModuleESIMView.swift in Sources */,
+				ED4AA3AEFD6F61CDF8DF8E3C /* ModuleNetworkStore.swift in Sources */,
+				25B71391B4AA4F6A062C8A1A /* ModuleVoWiFiStore.swift in Sources */,
+				15E4DD98FA2FF36FDA8AD602 /* MultiStandbyInboxView.swift in Sources */,
+				E2170612724DE2B10D9E2756 /* MultiStandbyModels.swift in Sources */,
+				3DBDA57C9D287322582D7D93 /* MultiStandbyStore.swift in Sources */,
+				FA5C876CD38DA119393BE229 /* MultiStandbyView.swift in Sources */,
+				6456531617C62EF559978D3B /* NetworkModels.swift in Sources */,
+				5FFB896E93BF4AA36BF301C2 /* NetworkServicesStore.swift in Sources */,
+				1058D08790CFC0069C7F98E0 /* ProletariusApp.swift in Sources */,
+				55A392D9B3B591E35D0CB523 /* ReaderBLEBridge.swift in Sources */,
+				9EF5B488FDA0DA82587E7D45 /* ReaderCardView.swift in Sources */,
+				5520AB8DD1E256570E683F6C /* ReaderDownloadESIMView.swift in Sources */,
+				31F879F4635FBAA8C3980750 /* ReaderESIMNotificationsView.swift in Sources */,
+				55C2CDC11D8C67A5C5F71060 /* ReaderESIMStore.swift in Sources */,
+				0CE987182806F8176177FD3C /* ReaderModels.swift in Sources */,
+				92DB03A95961984EFAE19FE6 /* ReaderRenameProfileView.swift in Sources */,
+				CD58A06058398B41E227D6FD /* ReaderRuntimeStore.swift in Sources */,
+				3FC7619C7214B7F0EDCB61EB /* ReaderVoWiFiAudioBridge.swift in Sources */,
+				A55DED59BC9CF66899ACEC9C /* Ringtone.swift in Sources */,
+				092AF24B7E32B21692445D59 /* SMSConversationViews.swift in Sources */,
+				0FA05ED97F0D987C9E0EFE92 /* SMSModels.swift in Sources */,
+				F7E9FDE76F52FFEB45FC8187 /* SMSStore.swift in Sources */,
+				3051B577BBD7E6E62FF39A5A /* SMSView.swift in Sources */,
+				8E3C7A19D5B2406F9C1E8A2B /* GatewaySettingsPlaceholderView.swift in Sources */,
+				A1B2C3D4E5F60718293A4B5C /* RemoteWorkspacePlaceholderView.swift in Sources */,
+				D2B6E4B5C9C2843ABC78EDA1 /* SettingsView.swift in Sources */,
+				C63F62F6A2EF646F3455E210 /* ToastItem.swift in Sources */,
+				96AD0DCABF6FFED14C763DD5 /* UnifiedStateRevision.swift in Sources */,
+				4469539B2002E238D4CF0321 /* UnixSocketURLProtocol.swift in Sources */,
+				311F282A8F3BA520B8D8A4D9 /* UpdateChecker.swift in Sources */,
+				4ABF0C05FCE48540E3B7FBEA /* WorkspaceViewport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4F08869FA3EF8E24F790687A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 267;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DISPLAY_NAME = OneWIFI;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		60BB8F923A085523ABC967C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = app/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneims.onewifi.mac;
+				PRODUCT_NAME = OneWIFI;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8A4F48F8F7B7E7299F629382 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 267;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DISPLAY_NAME = OneWIFI;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A453B9C8FCD13718C9ABA962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = app/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oneims.onewifi.mac;
+				PRODUCT_NAME = OneWIFI;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42B109DB5A67B356CF6E093C /* Build configuration list for PBXNativeTarget "Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A453B9C8FCD13718C9ABA962 /* Debug */,
+				60BB8F923A085523ABC967C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81CE9AE7B34CA13CAC83A50B /* Build configuration list for PBXProject "Switch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4F48F8F7B7E7299F629382 /* Debug */,
+				4F08869FA3EF8E24F790687A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 017E60C3487F457039AB814C /* Project object */;
+}
