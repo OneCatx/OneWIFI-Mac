@@ -53,16 +53,10 @@ struct ProletariusApp: App {
     private let launchSilently = AppLaunchMode.shouldLaunchSilently
 
     var body: some Scene {
-        Window("OneWIFI", id: AppSceneID.mainWindow) {
-            MainAppContent(appDelegate: appDelegate, dependencies: dependencies)
-        }
-        .windowStyle(.titleBar)
-        .windowToolbarStyle(.unified)
-        .defaultSize(width: 1180, height: 760)
-        .defaultLaunchBehavior(launchSilently ? .suppressed : .presented)
-        .commands {
-            SidebarCommands()
-            ProletariusNavigationCommands()
+        if #available(macOS 15.0, *) {
+            mainWindow.defaultLaunchBehavior(launchSilently ? .suppressed : .presented)
+        } else {
+            mainWindow
         }
 
         Settings {
@@ -70,6 +64,20 @@ struct ProletariusApp: App {
         }
 
         ProletariusMenuBarScene(appDelegate: appDelegate, dependencies: dependencies)
+    }
+
+    // `defaultLaunchBehavior` is macOS 15+, so silent launch only applies there.
+    private var mainWindow: some Scene {
+        Window("OneWIFI", id: AppSceneID.mainWindow) {
+            MainAppContent(appDelegate: appDelegate, dependencies: dependencies)
+        }
+        .windowStyle(.titleBar)
+        .windowToolbarStyle(.unified)
+        .defaultSize(width: 1180, height: 760)
+        .commands {
+            SidebarCommands()
+            ProletariusNavigationCommands()
+        }
     }
 }
 
